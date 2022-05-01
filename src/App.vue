@@ -1,30 +1,67 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <img src="./assets/navbar/logo.png" alt="" />
+    <ul>
+      <li>WHAT WE DO</li>
+      <li>HOW WE THINK</li>
+      <li>ABOUT US</li>
+      <li>CONTACT US</li>
+    </ul>
   </nav>
-  <router-view/>
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
 }
-
 nav {
-  padding: 30px;
+  background-color: #162b3e;
+  width: 10em;
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  img {
+    width: 10em;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    li{
+      font-size: 1em;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: calc( 100% - 15px );
+      padding-left: 15px;
+      cursor: pointer;
+
+      &:hover{
+        color: #162b3e;
+        background: white;
+      }
     }
   }
+}
+
+main {
+  max-width: calc(1920px - 10em);
+  margin-left: 10em;
 }
 </style>
