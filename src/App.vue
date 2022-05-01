@@ -44,7 +44,7 @@ nav {
     padding: 0px;
     width: 100%;
     li{
-      font-size: 1em;
+      font-size: 0.8em;
       color: white;
       padding-top: 10px;
       padding-bottom: 10px;
