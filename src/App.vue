@@ -19,6 +19,26 @@ body {
   padding: 0px;
   font-family: "Ubuntu", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #162b3e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fe9900;
+}
 nav {
   background-color: #162b3e;
   width: 10em;
@@ -37,22 +57,22 @@ nav {
     width: 10em;
   }
 
-  ul{
+  ul {
     text-decoration: none;
     list-style: none;
     margin: 0px;
     padding: 0px;
     width: 100%;
-    li{
+    li {
       font-size: 0.8em;
       color: white;
       padding-top: 10px;
       padding-bottom: 10px;
-      width: calc( 100% - 15px );
+      width: calc(100% - 15px);
       padding-left: 15px;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         color: #162b3e;
         background: white;
       }
