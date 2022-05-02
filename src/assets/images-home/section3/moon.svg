@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="777" height="777" viewBox="0 0 777 777">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_54" data-name="Elipse 54" cx="388.5" cy="388.5" r="388.5" transform="translate(694 1990)" fill="#f2f3f3"/>
+    </clipPath>
+  </defs>
+  <g id="moon" transform="translate(-694 -1990)" clip-path="url(#clip-path)">
+    <g id="Grupo_5" data-name="Grupo 5">
+      <circle id="Elipse_13" data-name="Elipse 13" cx="388.5" cy="388.5" r="388.5" transform="translate(694 1990)" fill="#f2f3f3"/>
+      <circle id="Elipse_51" data-name="Elipse 51" cx="115.5" cy="115.5" r="115.5" transform="translate(777 2433)" fill="#e4e4e4"/>
+      <circle id="Elipse_52" data-name="Elipse 52" cx="202" cy="202" r="202" transform="translate(1207 2280)" fill="#e4e4e4"/>
+      <circle id="Elipse_53" data-name="Elipse 53" cx="84" cy="84" r="84" transform="translate(1047 2096)" fill="#e4e4e4"/>
+    </g>
+  </g>
+</svg>

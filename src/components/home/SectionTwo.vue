@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="header">
+    <div class="header" id="cardsanimate">
       <img src="../../assets/images-home/section2/transform.png" alt="" />
       <p class="title-head">Take control of your <span>Transformation</span></p>
     </div>
@@ -23,8 +23,8 @@
 
       <div class="content-animate">
         <div class="animate-cards">
-          <div class="yellow-line"></div>
-          <div class="cards-row">
+          <div id="line-back" class="yellow-line"></div>
+          <div id="line" class="cards-row-begin">
             <div class="card">
               <div class="images">
                 <img
@@ -137,7 +137,16 @@
 
 <script>
 export default {
-  mounted() {},
+  mounted() {
+    let controller = new ScrollMagic.Controller();
+    let scene1 = new ScrollMagic.Scene({ triggerElement: "#cardsanimate" })
+      .setClassToggle("#line", "cards-row-end")
+      .addTo(controller);
+
+    let scene2 = new ScrollMagic.Scene({ triggerElement: "#cardsanimate" })
+      .setClassToggle("#line-back", "opacity-complete")
+      .addTo(controller);
+  },
 };
 </script>
 
@@ -223,11 +232,25 @@ export default {
         .yellow-line {
           background: #fe9900;
           height: 5em;
-          width: 20em;
+          width: 0em;
           margin-top: 6em;
+          transition: ease-in-out 0.2s;
         }
 
-        .cards-row {
+        .opacity-complete {
+          width: 20em;
+          transition: ease-in-out 0.2s;
+        }
+
+        .cards-row-end {
+          transition: ease-in-out 2s;
+          .card {
+            transform: perspective(40em) rotateY(45deg) !important;
+            transition: ease-in-out 2s;
+          }
+        }
+
+        .cards-row-begin {
           width: calc(90vw - 25em);
           display: flex;
           flex-direction: row;
@@ -235,10 +258,12 @@ export default {
           justify-content: start;
           padding-left: 2.5em;
           margin-left: -18em;
+          transition: ease-in-out 1s;
           .card {
             margin-right: -3em;
             width: 10em;
-            transform: perspective(40em) rotateY(45deg);
+            transform: perspective(40em) rotateY(90deg);
+            transition: ease-in-out 1s;
 
             .images {
               padding: 3em 0.5em;
@@ -270,7 +295,7 @@ export default {
       }
 
       .buttons {
-        width: 25em;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;

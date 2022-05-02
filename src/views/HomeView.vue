@@ -2,6 +2,7 @@
   <div class="home">
     <MainSection/>
     <SectionTwo/>
+    <SectionThree/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ export default {
   {
     MainSection: defineAsyncComponent(() => import("../components/home/MainSection.vue")),
     SectionTwo:defineAsyncComponent(() => import("../components/home/SectionTwo.vue")),
+    SectionThree:defineAsyncComponent(() => import("../components/home/SectionThree.vue")),
 }
 }
 </script>
