@@ -23,20 +23,103 @@
 
       <div class="content-animate">
         <div class="animate-cards">
-          <div class="card">
-            <div class="images">
-              <img
-                class="img1"
-                src="../../assets/images-home/section2/arrow.png"
-                alt="arrow-logo"
-              />
-              <img
-                class="img2"
-                src="../../assets/images-home/section2/product.png"
-                alt=""
-              />
+          <div class="yellow-line"></div>
+          <div class="cards-row">
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/product.png"
+                  alt=""
+                />
+              </div>
+              <p>Digital Products</p>
             </div>
-            <p>Digital Products</p>
+
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/internet-things.png"
+                  alt=""
+                />
+              </div>
+              <p>Internet of Things</p>
+            </div>
+
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/customers.png"
+                  alt=""
+                />
+              </div>
+              <p>Customer Experience</p>
+            </div>
+
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/ai.png"
+                  alt=""
+                />
+              </div>
+              <p>AI &#38; Machine Learning</p>
+            </div>
+
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/analitics-predictive.png"
+                  alt=""
+                />
+              </div>
+              <p>Predictive Analytics</p>
+            </div>
+
+            <div class="card">
+              <div class="images">
+                <img
+                  class="img1"
+                  src="../../assets/images-home/section2/arrow.png"
+                  alt="arrow-logo"
+                />
+                <img
+                  class="img2"
+                  src="../../assets/images-home/section2/app-movil.png"
+                  alt=""
+                />
+              </div>
+              <p>Mobile Applications</p>
+            </div>
           </div>
         </div>
 
@@ -132,33 +215,56 @@ export default {
 
       .animate-cards {
         width: calc(90vw - 25em);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
 
-        .card {
-          width: 13em;
-          transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-          .images {
-            padding: 3em 0.5em;
-            border: solid rgba(255, 255, 255, 0.411) 0.3em;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .img1,
-            .img2 {
-              width: 10em;
-              height: 10em;
-            }
+        .yellow-line {
+          background: #fe9900;
+          height: 5em;
+          width: 20em;
+          margin-top: 6em;
+        }
 
-            .img2 {
-              margin-top: -10em;
+        .cards-row {
+          width: calc(90vw - 25em);
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: start;
+          padding-left: 2.5em;
+          margin-left: -18em;
+          .card {
+            margin-right: -3em;
+            width: 10em;
+            transform: perspective(40em) rotateY(45deg);
+
+            .images {
+              padding: 3em 0.5em;
+              border: solid rgba(255, 255, 255, 0.411) 0.3em;
+              background: #162b3e;
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              .img1,
+              .img2 {
+                width: 8em;
+                height: 8em;
+              }
+
+              .img2 {
+                margin-top: -8em;
+              }
             }
-          }
-          p {
-            font-weight: bold;
-            width: 5em;
-            margin: 0px;
-            margin-top: 3px;
+            p {
+              font-weight: bold;
+              width: 7em;
+              margin: 0px;
+              margin-top: 3px;
+            }
           }
         }
       }
