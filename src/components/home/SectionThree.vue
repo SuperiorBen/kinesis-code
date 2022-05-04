@@ -334,7 +334,7 @@ export default {
 
 // Miscellaneous ===================================================================================
 .content-animatetion-miscellaneous {
-  height: 100vh;
+  height: auto;
   width: 100%;
   margin-top: -400vh;
   z-index: 2;
