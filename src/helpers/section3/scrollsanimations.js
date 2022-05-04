@@ -102,6 +102,19 @@ const scrolls = function () {
     })
         .setClassToggle("#c-paragraph1", "content-paragraph1-off")
         .addTo(controller);
+
+    // paragraph2 animation ===========================================================================
+    let paragraph2On = new ScrollMagic.Scene({
+        triggerElement: "#part2-animation",
+    })
+        .setClassToggle("#c-paragraph2", "content-paragraph2-on")
+        .addTo(controller);
+
+    let paragraph2Off = new ScrollMagic.Scene({
+        triggerElement: "#part3-animation",
+    })
+        .setClassToggle("#content-c-paragraph2", "content-c-paragraph2-off")
+        .addTo(controller);
 }
 
 export default scrolls;

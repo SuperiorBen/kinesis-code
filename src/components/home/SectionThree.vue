@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="content-c-paragraph2">
+    <div id="content-c-paragraph2" class="content-c-paragraph2">
       <div id="c-paragraph2" class="content-paragraph2">
         <div class="title-content">
           <p>We design business cloud infrastructure</p>
@@ -94,6 +94,12 @@
           clouds, data centers, and edge locations based on the specific
           requirements of your digital business.
         </p>
+        <img
+          class="img-moon"
+          src="../../assets/images-home/section3/cloud-infrastructure.png"
+          alt="image-cloud-infrastructure"
+        />
+        <div id="startext2"></div>
       </div>
     </div>
   </div>
@@ -140,8 +146,8 @@ export default {
 
   .content-planet1-part2 {
     img {
-          margin-left: 42em;
-    margin-top: 30em;
+      margin-left: 44em;
+      margin-top: 51em;
       transform: rotateZ(45deg);
       transition: ease-in-out 1s;
     }
@@ -182,7 +188,7 @@ export default {
   .content-planet2-part2 {
     img {
       margin-left: -4em;
-    margin-top: 34em;
+      margin-top: 60em;
       transform: rotateZ(30deg);
       transition: ease-in-out 1s;
     }
@@ -223,7 +229,7 @@ export default {
   .content-planet3-part2 {
     img {
       margin-left: 18em;
-      margin-top: 40em;
+      margin-top: 43em;
       transform: rotateZ(10deg);
       transition: ease-in-out 1s;
     }
@@ -319,9 +325,9 @@ export default {
     margin-top: 30em !important;
     transition: ease-in-out 1s !important;
     .rocket {
-      transform: rotateZ(170deg) !important;
+      transform: rotateZ(220deg) !important;
       margin-left: 28em !important;
-      margin-top: 7em !important;
+      margin-top: 11em !important;
       transition: ease-in-out 1s !important;
     }
   }
@@ -375,7 +381,7 @@ export default {
     .satellite {
       transform: rotateZ(10deg) !important;
       margin-left: 0em !important;
-      margin-top: 16em !important;
+      margin-top: 22em !important;
       transition: ease-in-out 1s !important;
     }
   }
@@ -499,19 +505,19 @@ export default {
   .content-c-paragraph2 {
     height: 100vh;
     width: 100%;
-    margin-top: -100vh;
-    opacity: 1;
+    margin-top: -75vh;
     transition: ease-in-out 0.5s;
     overflow: hidden;
     z-index: 2 !important;
 
     .content-paragraph2 {
+      opacity: 0;
       transition: ease-in-out 0.5s;
       color: white;
       width: 35em;
       height: 10em;
       margin-top: 22em;
-      margin-left: 20em;
+      margin-left: 22em;
       border-radius: 8px;
 
       .title-content {
@@ -525,6 +531,7 @@ export default {
         p {
           margin: 0px;
           width: 7em;
+          transition: ease-in-out 0.5s;
         }
         button {
           border: none;
@@ -535,6 +542,8 @@ export default {
           width: 100%;
           padding: 0.5em 0em;
           width: 17em;
+          transition: ease-in-out 0.5s;
+          cursor: pointer;
         }
       }
 
@@ -542,10 +551,44 @@ export default {
         margin-top: 1em !important;
         width: 25em;
         margin: 0px;
-        margin-left: -1em;
+        margin-left: -0.8em;
         line-height: 1.2em;
         font-size: 0.9em;
+        transition: ease-in-out 0.5s;
       }
+      .img-moon {
+        width: 22em;
+        position: relative;
+        top: -22em;
+        left: 25.5em;
+      }
+
+      #startext2 {
+        position: relative;
+        top: -38em;
+        left: -8em;
+      }
+    }
+  }
+
+  .content-paragraph2-on {
+    // visibility: hidden;
+    opacity: 1 !important;
+    transition: ease-in-out 0.5s;
+  }
+
+  .content-paragraph2-off {
+    // visibility: hidden;
+    opacity: 0 !important;
+    transition: ease-in-out 0.5s;
+  }
+
+  .content-c-paragraph2-off {
+    margin-top: -100vh;
+
+    .content-paragraph2 {
+      opacity: 0 !important;
+      transition: ease-in-out 0.5s;
     }
   }
 }
