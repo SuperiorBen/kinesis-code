@@ -7971,6 +7971,8 @@ export default {
   .paragraph {
     color: #162b3e;
     width: 25em;
+    line-height: 1.4em;
+    margin-top: -1em;
   }
 
   .actions {
