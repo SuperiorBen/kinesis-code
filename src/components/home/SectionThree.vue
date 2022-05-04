@@ -102,6 +102,46 @@
         <div id="startext2"></div>
       </div>
     </div>
+
+    <div id="content-c-paragraph3" class="content-c-paragraph3">
+      <div id="c-paragraph3" class="content-paragraph3">
+        <div class="title-content">
+          <p>We offer modern applications and analysis</p>
+          <button>Learn more</button>
+        </div>
+        <p class="info-paragraph">
+          We build cloud-native applications and provide modern data-driven
+          solutions, delivering better software faster while reducing the
+          complexity of your development process.
+        </p>
+        <img
+          class="img-moon"
+          src="../../assets/images-home/section3/modern.png"
+          alt="image-modern"
+        />
+        <div id="startext3"></div>
+      </div>
+    </div>
+
+    <div id="content-c-paragraph4" class="content-c-paragraph4">
+      <div id="c-paragraph4" class="content-paragraph4">
+        <div class="title-content">
+          <p>We create Smart Operations</p>
+          <button>Learn more</button>
+        </div>
+        <p class="info-paragraph">
+          We help technology organizations run smarter by integrating analytics,
+          monitoring, and service management platforms to improve efficiency,
+          user experience, and security.
+        </p>
+        <img
+          class="img-moon"
+          src="../../assets/images-home/section3/smart-operation.png"
+          alt="image-smart-operation"
+        />
+        <div id="startext4"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -112,7 +152,6 @@ import miscellaneous from "../../helpers/section3/miscellaneous";
 export default {
   mounted() {
     //   Lottie
-
     miscellaneous();
     backgroundStars();
     // Scroll magic
@@ -155,8 +194,8 @@ export default {
 
   .content-planet1-part3 {
     img {
-      margin-left: 5em;
-      margin-top: 85em;
+      margin-left: 3em;
+      margin-top: 82em;
       transform: rotateZ(80deg);
       transition: ease-in-out 1s;
     }
@@ -164,8 +203,8 @@ export default {
 
   .content-planet1-part4 {
     img {
-      margin-left: 39em;
-      margin-top: 123em;
+      margin-left: 44em;
+      margin-top: 126em;
       transform: rotateZ(0deg);
       transition: ease-in-out 1s;
     }
@@ -196,8 +235,8 @@ export default {
 
   .content-planet2-part3 {
     img {
-      margin-left: 60em;
-      margin-top: 100em;
+      margin-left: 53em;
+      margin-top: 101em;
       transform: rotateZ(60deg);
       transition: ease-in-out 1s;
     }
@@ -205,8 +244,8 @@ export default {
 
   .content-planet2-part4 {
     img {
-      margin-left: -4em;
-      margin-top: 140em;
+      margin-left: -2em;
+      margin-top: 135em;
       transform: rotateZ(90deg);
       transition: ease-in-out 1s;
     }
@@ -237,8 +276,8 @@ export default {
 
   .content-planet3-part3 {
     img {
-      margin-left: 50em;
-      margin-top: 80em;
+      margin-left: 44em;
+      margin-top: 72em;
       transform: rotateZ(60deg);
       transition: ease-in-out 1s;
     }
@@ -246,8 +285,8 @@ export default {
 
   .content-planet3-part4 {
     img {
-      margin-left: 10em;
-      margin-top: 120em;
+      margin-left: 14em;
+      margin-top: 111em;
       transform: rotateZ(90deg);
       transition: ease-in-out 1s;
     }
@@ -336,9 +375,9 @@ export default {
     margin-top: 82em !important;
     transition: ease-in-out 1s !important;
     .rocket {
-      transform: rotateZ(240deg) !important;
-      margin-left: 22em !important;
-      margin-top: 20em !important;
+      transform: rotateZ(217deg) !important;
+      margin-left: 19em !important;
+      margin-top: 16em !important;
       transition: ease-in-out 1s !important;
     }
   }
@@ -347,9 +386,9 @@ export default {
     margin-top: 102em !important;
     transition: ease-in-out 1s !important;
     .rocket {
-      transform: rotateZ(200deg) !important;
-      margin-left: 20em !important;
-      margin-top: 14em !important;
+      transform: rotateZ(244deg) !important;
+      margin-left: 27em !important;
+      margin-top: 12em !important;
       transition: ease-in-out 1s !important;
     }
   }
@@ -391,8 +430,8 @@ export default {
     transition: ease-in-out 1s !important;
     .satellite {
       transform: rotateZ(10deg) !important;
-      margin-left: 50em !important;
-      margin-top: 0em !important;
+      margin-left: 52em !important;
+      margin-top: -2em !important;
       transition: ease-in-out 1s !important;
     }
   }
@@ -577,12 +616,6 @@ export default {
     transition: ease-in-out 0.5s;
   }
 
-  .content-paragraph2-off {
-    // visibility: hidden;
-    opacity: 0 !important;
-    transition: ease-in-out 0.5s;
-  }
-
   .content-c-paragraph2-off {
     margin-top: -100vh;
 
@@ -591,5 +624,164 @@ export default {
       transition: ease-in-out 0.5s;
     }
   }
+
+  // paragraph 3 ===================================================================================
+  .content-c-paragraph3 {
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    z-index: 2 !important;
+
+    .content-paragraph3 {
+      opacity: 0;
+      transition: ease-in-out 0.5s;
+      color: white;
+      width: 35em;
+      height: 10em;
+      margin-top: 6em;
+      margin-left: 35em;
+      border-radius: 8px;
+
+      .title-content {
+        transition: ease-in-out 0.5s;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0px;
+        margin-left: -0.3em;
+        width: 9em;
+
+        p {
+          margin: 0px;
+          width: 9em;
+          transition: ease-in-out 0.5s;
+        }
+        button {
+          border: none;
+          border-radius: 8px;
+          color: white;
+          font-weight: bold;
+          background-color: #fe9900;
+          width: 100%;
+          padding: 0.5em 0em;
+          width: 17em;
+          transition: ease-in-out 0.5s;
+          cursor: pointer;
+        }
+      }
+
+      .info-paragraph {
+        margin-top: 1em !important;
+        width: 25em;
+        margin: 0px;
+        margin-left: -0.8em;
+        line-height: 1.2em;
+        font-size: 0.9em;
+        transition: ease-in-out 0.5s;
+      }
+      .img-moon {
+        width: 17em;
+        position: relative;
+        top: -17.5em;
+        left: -26.5em;
+      }
+
+      #startext3 {
+        position: relative;
+        top: -38em;
+        left: -8em;
+      }
+    }
+  }
+
+  .content-paragraph3-on {
+    // visibility: hidden;
+    opacity: 1 !important;
+    transition: ease-in-out 0.5s;
+  }
+
+  .content-paragraph3-off {
+    // visibility: hidden;
+    opacity: 0 !important;
+    transition: ease-in-out 0.5s;
+  }
+
+  // paragraph 4 ===================================================================================
+  .content-c-paragraph4 {
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    z-index: 2 !important;
+
+    .content-paragraph4 {
+      opacity: 0;
+      transition: ease-in-out 0.5s;
+      color: white;
+      width: 35em;
+      height: 10em;
+      margin-top: 15em;
+      margin-left: 22em;
+      border-radius: 8px;
+
+      .title-content {
+        transition: ease-in-out 0.5s;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0px;
+        margin-left: -0.3em;
+        width: 9em;
+
+        p {
+          margin: 0px;
+          width: 9em;
+          transition: ease-in-out 0.5s;
+        }
+        button {
+          border: none;
+          border-radius: 8px;
+          color: white;
+          font-weight: bold;
+          background-color: #fe9900;
+          width: 100%;
+          padding: 0.5em 0em;
+          width: 17em;
+          transition: ease-in-out 0.5s;
+          cursor: pointer;
+        }
+      }
+
+      .info-paragraph {
+        margin-top: 1em !important;
+        width: 25em;
+        margin: 0px;
+        margin-left: -0.8em;
+        line-height: 1.2em;
+        font-size: 0.9em;
+        transition: ease-in-out 0.5s;
+      }
+      .img-moon {
+        width: 24em;
+        position: relative;
+        top: -13.5em;
+        left: 24.5em;
+      }
+
+      #startext4 {
+        position: relative;
+        top: -32em;
+        left: -8em;
+      }
+    }
+  }
+
+  .content-paragraph4-on {
+    // visibility: hidden;
+    opacity: 1 !important;
+    transition: ease-in-out 0.5s;
+  }
+
 }
 </style>
