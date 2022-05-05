@@ -97,6 +97,48 @@
         </div>
       </div>
     </div>
+
+    <div class="section2">
+      <div class="content-form">
+        <img
+          src="../../assets/images-home/section3/final-part/arrow-gray.svg"
+          alt="arrow-gray"
+        />
+
+        <div class="content-info">
+          <p class="title">Contact <span>Us</span></p>
+
+          <form class="form">
+            <div id="i-i1" class="form-group">
+              <input name="completename" type="text" placeholder=" " />
+              <label class="labelform" for="completename">Complete Name</label>
+            </div>
+
+            <div id="i-i2" class="form-group">
+              <input name="email" type="text" placeholder=" " />
+              <label class="labelform" for="email">Email</label>
+            </div>
+
+            <div id="i-i3" class="form-group i3">
+              <input name="company" type="text" placeholder=" " />
+              <label class="labelform" for="company">Company</label>
+            </div>
+
+            <div id="i-i4" class="form-group i4">
+              <textarea name="comment" placeholder=" "></textarea>
+              <label class="labelform" for="comment">Comment</label>
+            </div>
+
+            <input
+              class="sent"
+              name="submit"
+              type="submit"
+              value="Send question!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -151,9 +193,9 @@ export default {
       }
       p {
         position: relative;
-        margin: 0px;
         top: -23.5em;
         left: 5.2em;
+        margin: 0px;
         font-size: 2em;
         color: #fe9900;
         font-weight: bold;
@@ -263,6 +305,148 @@ export default {
           }
           .img4 {
             width: 6em;
+          }
+        }
+      }
+    }
+  }
+
+  .section2 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    .content-form {
+      height: 50vh;
+      width: 22em;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 10em;
+        height: 50vh;
+      }
+
+      .content-info {
+        height: 50vh;
+        width: 22em;
+        margin-top: -50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          margin: 0px;
+          font-size: 2em;
+          color: #fe9900;
+          font-weight: bold;
+          margin-top: 0.6em;
+
+          span {
+            color: #162b3e;
+          }
+        }
+        .form {
+          width: 20em;
+          height: 16em;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 0.4em;
+
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            width: 85%;
+            margin-bottom: 0.2em;
+            transition: ease-in-out 0.2s;
+
+            label {
+              height: 1.5em;
+              font-size: 1em;
+              font-weight: bold;
+              position: relative;
+              bottom: 0em;
+              z-index: 1;
+              transition: ease-in-out 0.2s;
+              color: #162b3e8a;
+            }
+            input,
+            textarea {
+              outline: none;
+              width: 100%;
+              height: 1.5em;
+              border: none;
+              border-bottom: 1px solid #162b3e;
+              position: relative;
+              bottom: -1.5em;
+              resize: none;
+              background: none;
+              z-index: 2;
+              transition: ease-in-out 0.2s;
+            }
+            textarea {
+              bottom: -1.5em;
+              height: 2.5em;
+            }
+
+            input:focus + .labelform,
+            input:not(:placeholder-shown) + .labelform {
+              font-size: 0.5em !important;
+              color: #fe9900 !important;
+              bottom: 3em !important;
+              transition: ease-in-out 0.2s;
+            }
+
+            input:focus,
+            input:not(:placeholder-shown) {
+              border-bottom: 1px solid #fe9900;
+              transition: ease-in-out 0.2s;
+              bottom: -0.5em;
+            }
+
+            textarea:focus + .labelform,
+            textarea:not(:placeholder-shown) + .labelform {
+              font-size: 0.5em !important;
+              color: #fe9900 !important;
+              bottom: 3.5em !important;
+              transition: ease-in-out 0.2s;
+            }
+
+            textarea:focus,
+            textarea:not(:placeholder-shown) {
+              border-bottom: 1px solid #fe9900;
+              transition: ease-in-out 0.2s;
+              bottom: -0.8em;
+            }
+          }
+
+          #i-i1,
+          #i-i2,
+          #i-i3 {
+            height: 1.5em;
+          }
+          #i-i4 {
+            height: 2.5em;
+          }
+
+          .sent {
+            width: 90%;
+            height: 2em;
+            color: white;
+            background-color: #fe9900;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
           }
         }
       }

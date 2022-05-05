@@ -1,61 +1,63 @@
 <template>
-  <div class="content-svg">
-    <div class="arrow-content">
+  <div class="content-section1">
+    <div class="content-svg">
+      <div class="arrow-content">
+        <img
+          class="arrow"
+          src="../../assets/images-home/section1/arrow.svg"
+          alt="arrow"
+        />
+      </div>
       <img
-        class="arrow"
-        src="../../assets/images-home/section1/arrow.svg"
+        class="lune"
+        src="../../assets/images-home/section1/lune-cut.svg"
         alt="arrow"
       />
     </div>
-    <img
-      class="lune"
-      src="../../assets/images-home/section1/lune-cut.svg"
-      alt="arrow"
-    />
-  </div>
 
-  <div class="content-animated4">
-    <div id="aniMain4"></div>
-  </div>
-  <div class="content-animated1">
-    <div id="aniMain1"></div>
-  </div>
-  <div class="content-animated2">
-    <div id="aniMain2"></div>
-  </div>
-  <div class="content-animated3">
-    <div id="aniMain3"></div>
-  </div>
+    <div class="content-animated4">
+      <div id="aniMain4"></div>
+    </div>
+    <div class="content-animated1">
+      <div id="aniMain1"></div>
+    </div>
+    <div class="content-animated2">
+      <div id="aniMain2"></div>
+    </div>
+    <div class="content-animated3">
+      <div id="aniMain3"></div>
+    </div>
 
-  <div class="content-text">
-    <p class="title-head">
-      Create your platform for <span>digital business</span>
-    </p>
+    <div class="content-text">
+      <p class="title-head">
+        Create your platform for <span>digital business</span>
+      </p>
 
-    <p class="paragraph">
-      By bringing together advances in cloud infrastructure, intelligent
-      operations, and modern applications, we help businesses deliver on the
-      promise of digital transformation.
-    </p>
+      <p class="paragraph">
+        By bringing together advances in cloud infrastructure, intelligent
+        operations, and modern applications, we help businesses deliver on the
+        promise of digital transformation.
+      </p>
 
-    <div class="actions">
-      <div class="action1">
-        <div class="action-image-button">
-          <img src="../../assets/images-home/section1/advice.png" alt="" />
-          <button>
-            <img src="../../assets/images-home/section1/advice.svg" alt="" />
-            Get advice
-          </button>
+      <div class="actions">
+        <div class="action1">
+          <div class="action-image-button">
+            <img src="../../assets/images-home/section1/advice.png" alt="" />
+            <button>
+              <img src="../../assets/images-home/section1/advice.svg" alt="" />
+              Get advice
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="action2">
-        <div class="action-image-button">
-          <img src="../../assets/images-home/section1/bitcoin.png" alt="" />
-          <button>
-            <img src="../../assets/images-home/section1/cryto.svg" alt="" />
-            Crypto business
-          </button>
+        <div class="action2">
+          <div class="action-image-button">
+            <img src="../../assets/images-home/section1/bitcoin.png" alt="" />
+            <button>
+              <img src="../../assets/images-home/section1/cryto.svg" alt="" />
+              Crypto business
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -7910,105 +7912,111 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content-svg {
-  background: #f2f3f3;
+.content-section1 {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
 
-  .arrow-content {
+  .content-svg {
+    background: #f2f3f3;
     width: 100%;
-    height: 15em;
-    padding-left: calc(50% - 28em);
-    .arrow {
-      width: 15em;
-      margin-top: 3em;
-    }
-  }
-
-  .lune {
-    margin: auto;
-    margin-top: -12em;
-    width: 80em;
-  }
-}
-
-.content-animated1,
-.content-animated2,
-.content-animated3,
-.content-animated4 {
-  height: 100vh;
-  margin-top: -100vh;
-  overflow: hidden;
-  #aniMain1,
-  #aniMain2,
-  #aniMain3,
-  #aniMain4 {
-    height: 100%;
-    margin-left: 25em;
-  }
-}
-
-.content-text {
-  height: 90vh;
-  margin-top: -96vh;
-  padding-left: 5em;
-
-  .title-head {
-    font-weight: bold;
-    font-size: 2.5em;
-    width: 11em;
-    color: #162b3e;
-    span {
-      color: #fe9900;
-    }
-  }
-
-  .paragraph {
-    color: #162b3e;
-    width: 25em;
-    line-height: 1.4em;
-    margin-top: -1em;
-  }
-
-  .actions {
-    margin-top: 5em;
-    width: 22em;
-    height: 14em;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    z-index: 1;
 
-    .action1,
-    .action2 {
-      width: 10em;
+    .arrow-content {
+      width: 100%;
+      height: 15em;
+      padding-left: calc(50% - 28em);
+      .arrow {
+        width: 15em;
+        margin-top: 3em;
+      }
+    }
 
-      .action-image-button {
+    .lune {
+      margin: auto;
+      margin-top: -12em;
+      width: 80em;
+    }
+  }
+
+  .content-animated1,
+  .content-animated2,
+  .content-animated3,
+  .content-animated4 {
+    height: 100vh;
+    margin-top: -100vh;
+    overflow: hidden;
+    #aniMain1,
+    #aniMain2,
+    #aniMain3,
+    #aniMain4 {
+      height: 100%;
+      margin-left: 25em;
+    }
+  }
+
+  .content-text {
+    height: 90vh;
+    margin-top: -96vh;
+    padding-left: 5em;
+
+    .title-head {
+      font-weight: bold;
+      font-size: 2.5em;
+      width: 11em;
+      color: #162b3e;
+      span {
+        color: #fe9900;
+      }
+    }
+
+    .paragraph {
+      color: #162b3e;
+      width: 25em;
+      line-height: 1.4em;
+      margin-top: -1em;
+    }
+
+    .actions {
+      margin-top: 5em;
+      width: 22em;
+      height: 14em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .action1,
+      .action2 {
         width: 10em;
-        img {
+
+        .action-image-button {
           width: 10em;
-          height: 12em;
-        }
-
-        button {
-          width: 100%;
-          height: 2em;
-          border-radius: 5px;
-          border: none;
-          background-color: #fe9900;
-          color: white;
-          text-align: center;
-          font-weight: bold;
-
           img {
-            width: 1em;
-            height: 1em;
-            vertical-align: text-top;
+            width: 10em;
+            height: 12em;
+          }
+
+          button {
+            width: 100%;
+            height: 2em;
+            border-radius: 5px;
+            border: none;
+            background-color: #fe9900;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+
+            img {
+              width: 1em;
+              height: 1em;
+              vertical-align: text-top;
+            }
           }
         }
       }
