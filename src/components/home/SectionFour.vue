@@ -48,20 +48,52 @@
           <p>Custom development with specialists in different technologies</p>
         </div>
 
-        <div class="logos-column">
-            <div class="orange"></div>
-            <div class="column1">
-                <img src="../../assets/images-home/section3/final-part/laravel.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/lumen.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/node.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/python.png" alt="">
-            </div>
-            <div class="column2">
-                <img src="../../assets/images-home/section3/final-part/vue.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/react.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/kotlin.png" alt="">
-                <img src="../../assets/images-home/section3/final-part/Swift.png" alt="">
-            </div>
+        <div class="logos">
+          <div class="orange"></div>
+          <div class="column1">
+            <img
+              class="img1"
+              src="../../assets/images-home/section3/final-part/laravel.png"
+              alt=""
+            />
+            <img
+              class="img2"
+              src="../../assets/images-home/section3/final-part/lumen.png"
+              alt=""
+            />
+            <img
+              class="img3"
+              src="../../assets/images-home/section3/final-part/node.png"
+              alt=""
+            />
+            <img
+              class="img4"
+              src="../../assets/images-home/section3/final-part/python.png"
+              alt=""
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="img1"
+              src="../../assets/images-home/section3/final-part/vue.png"
+              alt=""
+            />
+            <img
+              class="img2"
+              src="../../assets/images-home/section3/final-part/react.png"
+              alt=""
+            />
+            <img
+              class="img3"
+              src="../../assets/images-home/section3/final-part/kotlin.png"
+              alt=""
+            />
+            <img
+              class="img4"
+              src="../../assets/images-home/section3/final-part/Swift.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -88,7 +120,7 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
 
     .animation-laptop {
       width: 22em;
@@ -139,6 +171,8 @@ export default {
         font-size: 0.9em;
         color: #162b3e;
         line-height: 1.4em;
+        margin: 0px;
+        margin-top: 1.5em;
       }
       .img-text {
         width: 25em;
@@ -158,24 +192,80 @@ export default {
       }
     }
 
-    .content-logo{
-        .animation{
-            width: 22em;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+    .content-logo {
+      .animation {
+        width: 22em;
+        height: 8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-            #code{
-                width: 8em;
-            }
-            p{
-                width: 12em;
-                font-size: 1em;
-                font-weight: bold;
-                color: #162b3e;
-            }
+        #code {
+          width: 8em;
         }
+        p {
+          width: 12em;
+          font-size: 1em;
+          font-weight: bold;
+          color: #162b3e;
+        }
+      }
+
+      .logos {
+        width: 22em;
+        height: calc(50vh - 8em);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .orange {
+          height: 100%;
+          width: 1em;
+          background-color: #fe9900;
+        }
+        .column1 {
+          width: 10em;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          .img1 {
+            width: 6em;
+          }
+          .img2 {
+            width: 6em;
+          }
+          .img3 {
+            width: 5em;
+          }
+          .img4 {
+            width: 6em;
+          }
+        }
+
+        .column2 {
+          width: 10em;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          .img1 {
+            width: 6em;
+          }
+          .img2 {
+            width: 6em;
+          }
+          .img3 {
+            width: 6em;
+          }
+          .img4 {
+            width: 6em;
+          }
+        }
+      }
     }
   }
 }
