@@ -1,0 +1,41 @@
+@media (max-width: 1400px){
+  .content-section1 {
+  
+    .content-text {
+  
+      .actions {
+        margin-top: 5em;
+        width: 22em;
+        height: 14em;
+  
+        .action1,
+        .action2 {
+          width: 10em;
+  
+          .action-image-button {
+            width: 10em;
+            img {
+              width: 10em;
+              height: 12em;
+            }
+  
+            .button {
+              width: 10em;
+              height: 2em;
+              
+  
+              img {
+                width: 1em;
+                height: 1em;
+                margin-right: 0.3em;
+              }
+              p{
+                margin: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

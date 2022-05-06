@@ -43,20 +43,20 @@
         <div class="action1">
           <div class="action-image-button">
             <img src="../../assets/images-home/section1/advice.png" alt="" />
-            <button>
+            <div class="button">
               <img src="../../assets/images-home/section1/advice.svg" alt="" />
-              Get advice
-            </button>
+              <p>Get advice</p>
+            </div>
           </div>
         </div>
 
         <div class="action2">
           <div class="action-image-button">
             <img src="../../assets/images-home/section1/bitcoin.png" alt="" />
-            <button>
+            <div class="button">
               <img src="../../assets/images-home/section1/cryto.svg" alt="" />
-              Crypto business
-            </button>
+              <p>Crypto business</p>
+            </div>
           </div>
         </div>
       </div>
@@ -67,6 +67,7 @@
 <script>
 export default {
   mounted() {
+    // alert(screen.width +  " " +  screen.height);
     let animation1 = bodymovin.loadAnimation({
       animationData: {
         v: "5.9.0",
@@ -7912,115 +7913,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content-section1 {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-  .content-svg {
-    background: #f2f3f3;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-
-    .arrow-content {
-      width: 100%;
-      height: 15em;
-      padding-left: calc(50% - 28em);
-      .arrow {
-        width: 15em;
-        margin-top: 3em;
-      }
-    }
-
-    .lune {
-      margin: auto;
-      margin-top: -12em;
-      width: 80em;
-    }
-  }
-
-  .content-animated1,
-  .content-animated2,
-  .content-animated3,
-  .content-animated4 {
-    height: 100vh;
-    margin-top: -100vh;
-    overflow: hidden;
-    #aniMain1,
-    #aniMain2,
-    #aniMain3,
-    #aniMain4 {
-      height: 100%;
-      margin-left: 25em;
-    }
-  }
-
-  .content-text {
-    height: 90vh;
-    margin-top: -96vh;
-    padding-left: 5em;
-
-    .title-head {
-      font-weight: bold;
-      font-size: 2.5em;
-      width: 11em;
-      color: #162b3e;
-      span {
-        color: #fe9900;
-      }
-    }
-
-    .paragraph {
-      color: #162b3e;
-      width: 25em;
-      line-height: 1.4em;
-      margin-top: -1em;
-    }
-
-    .actions {
-      margin-top: 5em;
-      width: 22em;
-      height: 14em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-
-      .action1,
-      .action2 {
-        width: 10em;
-
-        .action-image-button {
-          width: 10em;
-          img {
-            width: 10em;
-            height: 12em;
-          }
-
-          button {
-            width: 100%;
-            height: 2em;
-            border-radius: 5px;
-            border: none;
-            background-color: #fe9900;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-
-            img {
-              width: 1em;
-              height: 1em;
-              vertical-align: text-top;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+@import "../../assets/scss/home/section1/home-section1-fullhd.scss";
+@import "../../assets/scss/home/section1/home-section1.scss";
 </style>
