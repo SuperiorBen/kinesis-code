@@ -1,0 +1,94 @@
+@media (max-width: 430px) {
+    .content-section1 {
+        width          : 100vw;
+        height         : 100vh;
+        overflow       : hidden;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+
+        .content-svg {
+            position      : absolute;
+            top           : 0vh;
+            
+
+            .arrow-content {
+                .arrow {
+                    margin-left: 5em;
+                }
+            }
+        }
+
+        .content-animated1,
+        .content-animated2,
+        .content-animated3,
+        .content-animated4 {
+            height  : 40vh;
+            width   : 80vw;
+            position: absolute;
+            top     : 105vh;
+            left    : 10vw;
+            z-index : 2;
+
+            #aniMain1,
+            #aniMain2,
+            #aniMain3,
+            #aniMain4 {
+                margin-left: 0em;
+            }
+        }
+
+        .content-text {
+            height      : 50vh;
+            width       : 100vw;
+            padding-left: 0em;
+            position    : absolute;
+            top         : 140vh;
+            z-index     : 3;
+
+            .title-head {
+                font-size  : 2em;
+                text-align : end;
+                margin     : auto;
+                margin-top : 1em;
+            }
+
+            .paragraph {
+                width      : 90vw;
+                margin     : auto;
+                margin-top : 1em;
+                text-align : end;
+            }
+
+            .actions {
+                margin-top     : 0vh;
+                width          : 100vw;
+
+                .action1,
+                .action2 {
+                    width          : 40vw;
+
+                    .action-image-button {
+                        display        : flex;
+                        flex-direction : column;
+                        justify-content: center;
+                        align-items    : center;
+
+                        img {
+                            width : 8em;
+                            height: 10em;
+                        }
+
+                        .button {
+                            width           : 8em;
+                            p {
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

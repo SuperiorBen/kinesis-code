@@ -109,7 +109,7 @@ main {
   margin-left: 10em;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 430px) {
   .open {
     display: flex;
     justify-content: center;

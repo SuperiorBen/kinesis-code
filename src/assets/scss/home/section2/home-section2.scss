@@ -199,3 +199,9 @@
       }
     }
   }
+
+  @media (max-width: 430px) {
+    .main {
+      display: none;
+    }
+  }

@@ -68,6 +68,7 @@
 export default {
   mounted() {
     // alert(screen.width +  " " +  screen.height);
+    
     let animation1 = bodymovin.loadAnimation({
       animationData: {
         v: "5.9.0",
@@ -7908,6 +7909,7 @@ export default {
       autoplay: true, // Optional
       name: "aniMain4", // Name for future reference. Optional.
     });
+    
   },
 };
 </script>
@@ -7915,4 +7917,5 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/scss/home/section1/home-section1-fullhd.scss";
 @import "../../assets/scss/home/section1/home-section1.scss";
+@import "../../assets/scss/home/section1/home-section1-mobile.scss";
 </style>
