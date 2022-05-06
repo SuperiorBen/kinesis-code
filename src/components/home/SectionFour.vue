@@ -25,10 +25,7 @@
           survived
           <br /><br />
           not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum.
+          typesetting.
         </p>
         <div class="img-text">
           <img
@@ -138,6 +135,66 @@
           </form>
         </div>
       </div>
+
+      <div class="content-info">
+        <div class="animation">
+          <div class="orange"></div>
+          <div class="content-side">
+            <div class="info">
+              <p class="title">Central office</p>
+              <div class="icon-location">
+                <img
+                  src="../../assets/images-home/section3/final-part/globo-location-icon.svg"
+                  alt=""
+                />
+                <p>
+                  <span>San Salvador, El Salvador</span><br />
+                  is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been
+                </p>
+              </div>
+
+              <div class="icon-mail">
+                <img
+                  src="../../assets/images-home/section3/final-part/mail-icon.svg"
+                  alt=""
+                />
+                <p>bussines.info@kinesis.com</p>
+              </div>
+            </div>
+
+            <div class="content-animation">
+              <div id="phone"></div>
+              <img
+                class="planet"
+                src="../../assets/images-home/section3/final-part/bg-phone.svg"
+                alt="bg-phone"
+              />
+
+              <div class="button-what">
+                <img
+                  class="icon-wha"
+                  src="../../assets/images-home/section3/final-part/whatsapp-icon.svg"
+                  alt="whatsapp"
+                />
+                <p>Contact us</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-drawing">
+            <img
+              class="world"
+              src="../../assets/images-home/section3/final-part/world.svg"
+              alt="world"
+            />
+            <img
+              class="elipse"
+              src="../../assets/images-home/section3/final-part/elipsegray.svg"
+              alt="elipsegray"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -163,11 +220,11 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
 
     .animation-laptop {
       width: 22em;
       height: 50vh;
-      margin-top: 1em;
       overflow: hidden;
 
       .elipse {
@@ -209,12 +266,17 @@ export default {
     .content-paragraph {
       width: 30em;
       height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       p {
         font-size: 0.9em;
         color: #162b3e;
         line-height: 1.4em;
         margin: 0px;
         margin-top: 1.5em;
+        width: 29em;
       }
       .img-text {
         width: 25em;
@@ -223,6 +285,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         margin: auto;
+        margin-top: 1em;
         img {
           width: 4em;
         }
@@ -230,6 +293,7 @@ export default {
           font-weight: bold;
           color: black;
           width: 22em;
+          margin: 0px;
         }
       }
     }
@@ -237,7 +301,7 @@ export default {
     .content-logo {
       .animation {
         width: 22em;
-        height: 8em;
+        height: 7em;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -343,7 +407,7 @@ export default {
 
         .title {
           margin: 0px;
-          font-size: 2em;
+          font-size: 1.5em;
           color: #fe9900;
           font-weight: bold;
           margin-top: 0.6em;
@@ -360,6 +424,7 @@ export default {
           justify-content: space-around;
           align-items: center;
           padding-top: 0.4em;
+          margin-top: -0.7em;
 
           .form-group {
             display: flex;
@@ -447,6 +512,160 @@ export default {
             border: none;
             font-weight: bold;
             border-radius: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .content-info {
+      height: 50vh;
+      width: calc(100% - 22em);
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      .animation {
+        background: #162b3e;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .orange {
+          width: 1em;
+          height: 35vh;
+          background: #fe9900;
+          margin-right: 4em;
+          margin-left: 3em;
+        }
+        .content-side {
+          width: 18em;
+          height: 50vh;
+          overflow: hidden;
+          .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 1em;
+            .title {
+              font-size: 1em;
+              font-weight: bold;
+              color: #fe9900;
+              margin: 0px;
+              margin-bottom: 0.5em;
+            }
+            .icon-location {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: flex-start;
+
+              img {
+                width: 0.8em;
+                margin-right: 0.5em;
+              }
+              p {
+                color: white;
+                font-size: 0.7em;
+                line-height: 1.2em;
+                margin: 0px;
+                width: 17em;
+                span {
+                  font-weight: bold;
+                  margin-bottom: 1.5em;
+                }
+              }
+            }
+            .icon-mail {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: flex-start;
+              margin-top: 1em;
+
+              img {
+                width: 0.8em;
+                margin-right: 0.5em;
+              }
+              p {
+                color: white;
+                font-size: 0.7em;
+                margin: 0px;
+              }
+            }
+          }
+
+          .content-animation {
+            width: 18em;
+            overflow: hidden;
+            margin-top: 0.5em;
+            #phone {
+              z-index: 2;
+              width: 7em;
+              height: 7em;
+              position: relative;
+              top: 0em;
+              left: 5.5em;
+            }
+            .planet {
+              z-index: 1;
+              width: 10em;
+              height: 10em;
+              position: relative;
+              top: -5em;
+              left: 4.5em;
+            }
+            .button-what {
+              width: 10em;
+              height: 1.5em;
+              background: #25d366;
+              position: relative;
+              z-index: 3;
+              top: -9em;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              border-radius: 4px;
+              left: 4.4em;
+              cursor: pointer;
+              .icon-wha {
+                width: 0.9em;
+                color: white;
+                margin-right: 0.3em;
+              }
+              p {
+                margin: 0px px;
+                color: white;
+                font-size: 0.8em;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .content-drawing {
+          width: calc(100% - 26em);
+          height: 50vh;
+          background: #162b3e;
+          display: flex;
+          flex-direction: column;
+          .world {
+            width: 25em;
+            position: relative;
+            top: 2em;
+            left: -1em;
+            z-index: 2;
+          }
+          .elipse {
+            width: 38em;
+            position: relative;
+            top: -27em;
+            left: 2em;
+            z-index: 1;
           }
         }
       }
