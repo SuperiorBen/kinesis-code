@@ -144,12 +144,14 @@ export default {
       .addTo(controller);
 
     let scene2 = new ScrollMagic.Scene({ triggerElement: "#cardsanimate" })
-      .setClassToggle("#line-back", "opacity-complete")
+      .setClassToggle("#line-back", "long-complete")
       .addTo(controller);
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/home/section2/home-section2-fullhd.scss";
 @import "../../assets/scss/home/section2/home-section2.scss";
+@import "../../assets/scss/home/section2/home-section2-mobile.scss";
 </style>

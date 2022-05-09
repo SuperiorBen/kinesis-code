@@ -1,0 +1,100 @@
+@media (max-width: 430px) {
+    .main {
+        .header {
+            height     : calc(18vh - 1em);
+            padding-top: 1em;
+
+            img {
+                width: 8em;
+            }
+
+            .title-head {
+                font-size: 1.2em;
+                width    : 10em;
+            }
+        }
+
+        .cards {
+            padding-top: 1em;
+            height     : 82vh;
+            width      : 100vw;
+
+            .texts {
+                width         : 100vw;
+                flex-direction: column;
+                height        : calc(24vh - 1em);
+                padding-top   : 1em;
+                overflow      : hidden;
+
+                .title-card {
+                    font-size    : 2em;
+                    margin-top   : 0.5em;
+                    margin-bottom: 0.5em;
+                }
+
+                .paragraph {
+                    width     : 90%;
+                    text-align: start;
+                }
+            }
+
+            .content-animate {
+                flex-direction: column-reverse;
+                width         : 100vw;
+                margin-top    : 1em;
+                height        : calc(57vh - 1em);
+                overflow      : hidden;
+
+                .animate-cards {
+                    width   : 100vw;
+                    height  : 60%;
+                    overflow: hidden;
+
+                    .yellow-line {
+                        display: none;
+                    }
+
+                    .cards-row-begin {
+                        width       : 100vw;
+                        align-items : center;
+                        padding-left: 0.5em;
+                        margin-left : -0.5em;
+                        margin-top  : 10%;
+
+                        .card {
+                            margin-right: -2em;
+                            width       : 6em;
+
+                            .images {
+                                padding: 2em 0.5em;
+
+                                .img1,
+                                .img2 {
+                                    width : 5em;
+                                    height: 5em;
+                                }
+
+                                .img2 {
+                                    margin-top: -5em;
+                                }
+                            }
+
+                            p {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+
+                .buttons {
+                    margin-right: 0em;
+                    height      : 40%;
+
+                    .btn {
+                        width: 25em;
+                    }
+                }
+            }
+        }
+    }
+}
