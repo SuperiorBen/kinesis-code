@@ -170,5 +170,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/home/section3/home-section3-fullhd.scss";
 @import "../../assets/scss/home/section3/home-section3.scss";
+@import "../../assets/scss/home/section3/home-section3-mobile.scss";
 </style>

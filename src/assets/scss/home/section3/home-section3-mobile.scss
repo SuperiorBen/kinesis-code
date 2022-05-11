@@ -1,0 +1,438 @@
+@media (max-width: 430px) {
+    .content-space-animation {
+        .content-animation {
+
+            // Planet 1 ===================================================================================
+            .content-planet1 {
+                img {
+                    width      : 25em;
+                    margin-left: 3em;
+                    margin-top : 34em;
+                }
+            }
+
+            .content-planet1-part2 {
+                img {
+                    margin-left: -1em;
+                    margin-top : 82em;
+                }
+            }
+
+            .content-planet1-part3 {
+                img {
+                    margin-left: 3em;
+                    margin-top : 134em;
+                }
+            }
+
+            .content-planet1-part4 {
+                img {
+                    margin-left: 2em;
+                    margin-top : 184em;
+                }
+            }
+
+            // Planet 2 ===================================================================================
+
+            .content-planet2 {
+                display: none;
+            }
+
+            // Planet 2 ===================================================================================
+
+            .content-planet3 {
+
+                img {
+                    width      : 13em;
+                    margin-left: -4em;
+                    margin-top : 1em;
+                }
+            }
+
+            .content-planet3-part2 {
+                img {
+                    margin-left: 14em;
+                    margin-top : 52em;
+                }
+            }
+
+            .content-planet3-part3 {
+                img {
+                    margin-left: 1em;
+                    margin-top : 103em;
+                }
+            }
+
+            .content-planet3-part4 {
+                img {
+                    margin-left: 14em;
+                    margin-top : 158em;
+                }
+            }
+
+            // Stars background ===================================================================================
+            #content-bgStars {
+
+                #bgStars {
+                    transform  : rotate(90deg);
+                    margin-top : -10vh;
+                    margin-left: 3em;
+                }
+
+                #bgStars2 {
+                    max-height : 100vh;
+                    margin-top : -54vh;
+                    margin-left: -9em;
+                    overflow   : hidden;
+                    transform  : rotate(90deg);
+                }
+            }
+
+            //   Background font
+
+            #part2-animation,
+            #part3-animation,
+            #part4-animation {
+                .bgStars {
+                    transform  : rotate(90deg);
+                    margin-top : -5vh;
+                    margin-left: -8em;
+                }
+
+                .bgStars2 {
+                    transform  : rotate(90deg);
+                    margin-top : -70vh;
+                    margin-left: 3em;
+                    overflow   : hidden;
+                }
+            }
+
+        }
+
+        // Miscellaneous ===================================================================================
+        .content-animatetion-miscellaneous {
+
+            // Rocket ===================================================================================
+            .content-c-rocket {
+
+                .content-rocket {
+
+                    .rocket {
+                        width      : 15em;
+                        margin-left: 10em;
+                    }
+                }
+            }
+
+            .content-rocket-part2 {
+                margin-top: 52em !important;
+
+                .rocket {
+                    margin-left: 4em !important;
+                    margin-top : -2em !important;
+                }
+            }
+
+            .content-rocket-part3 {
+                margin-top: 105em !important;
+
+                .rocket {
+                    margin-left: -3em !important;
+                    margin-top : 25em !important;
+                }
+            }
+
+            .content-rocket-part4 {
+                margin-top: 158em !important;
+
+                .rocket {
+                    margin-left: 2em !important;
+                    margin-top : 0em !important;
+                }
+            }
+
+            // Satellite ===================================================================================
+            .content-c-satellite {
+
+                .content-satellite {
+
+                    .satellite {
+                        width      : 15em;
+                        margin-left: 2em;
+                        margin-top : 40em;
+                    }
+                }
+            }
+
+            .content-satellite-part2 {
+                margin-top: 0em !important;
+
+                .satellite {
+                    width      : 10em !important;
+                    margin-left: 14em !important;
+                    margin-top : 26em !important;
+                }
+            }
+
+            .content-satellite-part3 {
+                margin-top: 0em !important;
+
+                .satellite {
+                    margin-left: 15em !important;
+                    margin-top : 2em !important;
+                }
+            }
+
+            .content-satellite-part4 {
+                margin-top : 1em !important;
+                margin-left: 4em !important;
+
+                .satellite {
+                    margin-left: 13em !important;
+                    margin-top : 20em !important;
+                }
+            }
+
+            // paragraph 1 ===================================================================================
+            .content-c-paragraph1 {
+
+                .content-paragraph1 {
+                    width      : 30em;
+                    height     : 12em;
+                    margin-top : 19em;
+                    margin-left: 5%;
+
+                    .title-paragpraph {
+                        margin-left: 1em;
+
+                        img {
+                            width     : 4.5em;
+                            margin-top: 0.4em;
+                        }
+
+                        p {
+                            font-size  : 2em;
+                            font-weight: bold;
+                            margin     : 0px;
+                            margin-left: -0.3em;
+                        }
+                    }
+
+                    p {
+                        margin     : 0px;
+                        width      : 25em;
+                        font-size  : 0.8em;
+                        margin-left: 2.7em;
+                        margin-top : 1em;
+                        line-height: 1.4em;
+                    }
+
+                    .saeta-r1 {
+                        width: 3em;
+                        top  : -180px;
+                    }
+
+                    .saeta-r2 {
+                        width: 3em;
+                        top  : 0px;
+                        left : -48px;
+                    }
+
+                    .saeta-r3 {
+                        width: 3em;
+                        top  : -180px;
+                        left : 230px;
+                    }
+
+                    .saeta-r4 {
+                        width: 3em;
+                        top  : 0px;
+                        left : 180px;
+                    }
+
+                    #startext1 {
+                        top : -245px;
+                        left: -60px;
+                    }
+                }
+            }
+
+
+
+            // paragraph 2 ===================================================================================
+            .content-c-paragraph2 {
+                margin-top: -90vh;
+
+                .content-paragraph2 {
+                    opacity    : 0;
+                    width      : 35em;
+                    height     : 10em;
+                    margin-top : 10em;
+                    margin-left: 12%;
+
+                    .title-content {
+                        font-size  : 2em;
+                        margin     : 0px;
+                        margin-left: -0.3em;
+                        margin-top : -2em !important;
+                        width      : 8em;
+
+                        p {
+                            margin: 0px;
+                            width : 7em;
+                        }
+
+                        button {
+                            padding: 0.5em 0em;
+                            width  : 17em;
+                        }
+                    }
+
+                    .info-paragraph {
+                        margin-top : 1em !important;
+                        width      : 25em;
+                        margin     : 0px;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size  : 0.9em;
+                    }
+
+                    .img-moon {
+                        width: 20em;
+                        top  : 7em;
+                        left : -2em;
+                    }
+
+                    #startext2 {
+                        top : -36em;
+                        left: -8em;
+                    }
+                }
+            }
+
+            .content-c-paragraph2-off {
+                margin-top: -100vh;
+
+                .content-paragraph2 {
+                    opacity   : 0 !important;
+                    transition: ease-in-out 0.5s;
+                }
+            }
+
+            // paragraph 3 ===================================================================================
+            .content-c-paragraph3 {
+
+                .content-paragraph3 {
+                    width      : 35em;
+                    height     : 10em;
+                    margin-top : 13em;
+                    margin-left: 3em;
+
+                    .title-content {
+                        font-size  : 2em;
+                        font-weight: bold;
+                        margin     : 0px;
+                        margin-left: -0.3em;
+                        width      : 9em;
+
+                        p {
+                            margin: 0px;
+                            width : 9em;
+                        }
+
+                        button {
+                            padding: 0.5em 0em;
+                            width  : 17em;
+                        }
+                    }
+
+                    .info-paragraph {
+                        margin-top : 1em !important;
+                        width      : 25em;
+                        margin     : 0px;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size  : 0.9em;
+                    }
+
+                    .img-moon {
+                        width: 14em;
+                        top  : 4.5em;
+                        left : 5em;
+                    }
+
+                    #startext3 {
+                        top : -31em;
+                        left: -7em;
+                    }
+                }
+            }
+
+            .content-paragraph3-on {
+                // visibility: hidden;
+                opacity: 1 !important;
+            }
+
+            .content-paragraph3-off {
+                // visibility: hidden;
+                opacity   : 0 !important;
+                transition: ease-in-out 0.5s;
+            }
+
+            // paragraph 4 ===================================================================================
+            .content-c-paragraph4 {
+
+                .content-paragraph4 {
+                    width      : 35em;
+                    height     : 10em;
+                    margin-top : 12em;
+                    margin-left: 2em;
+
+                    .title-content {
+                        font-size  : 2em;
+                        font-weight: bold;
+                        margin     : 0px;
+                        margin-left: -0.3em;
+                        width      : 9em;
+
+                        p {
+                            margin: 0px;
+                            width : 9em;
+                        }
+
+                        button {
+                            padding: 0.5em 0em;
+                            width  : 17em;
+                        }
+                    }
+
+                    .info-paragraph {
+                        margin-top : 1em !important;
+                        width      : 25em;
+                        margin     : 0px;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size  : 0.9em;
+                    }
+
+                    .img-moon {
+                        width   : 20em;
+                        top     : 6em;
+                        left    : 2em;
+                    }
+
+                    #startext4 {
+                        top     : -28em;
+                        left    : -8em;
+                    }
+                }
+            }
+
+            .content-paragraph4-on {
+                // visibility: hidden;
+                opacity   : 1 !important;
+            }
+        }
+    }
+
+}
