@@ -35,6 +35,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Ubuntu", sans-serif;
+  font-size: 16px !important;
 }
 
 ::-webkit-scrollbar {
