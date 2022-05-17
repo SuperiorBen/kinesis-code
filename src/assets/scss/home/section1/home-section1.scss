@@ -5,22 +5,22 @@
   
       .actions {
         margin-top: 5em;
-        width: 22em;
+        width: 20em;
         height: 14em;
   
         .action1,
         .action2 {
-          width: 10em;
+          width: 9em;
   
           .action-image-button {
-            width: 10em;
+            width: 9em;
             img {
-              width: 10em;
-              height: 12em;
+              width: 8em;
+              height: 10em;
             }
   
             .button {
-              width: 10em;
+              width: 9em;
               height: 2em;
               
   
@@ -31,6 +31,7 @@
               }
               p{
                 margin: 0px;
+                font-size: 0.8em;
               }
             }
           }
