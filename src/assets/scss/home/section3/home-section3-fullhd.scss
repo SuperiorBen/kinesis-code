@@ -1,230 +1,128 @@
-.content-space-animation {
-    height: 400vh;
-    width: 100%;
-    overflow: hidden;
 
-    .content-animation {
+    .content-space-animation {
         height: 400vh;
         width: 100%;
-        background: #162b3e;
         overflow: hidden;
-        z-index: 1;
-        position: relative;
-
-        // Planet 1 ===================================================================================
-        .content-planet1 {
-            height: 100vh;
+    
+        .content-animation {
+            height: 400vh;
             width: 100%;
-            margin-top: 0vh;
-
-            img {
-                width: 50em;
-                margin-left: 68em;
-                margin-top: 20em;
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet1-part2 {
-            img {
-                margin-left: 60em;
-                margin-top: 82em;
-                transform: rotateZ(45deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet1-part3 {
-            img {
-                margin-left: 3em;
-                margin-top: 145em;
-                transform: rotateZ(80deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet1-part4 {
-            img {
-                margin-left: 58em;
-                margin-top: 215em;
-                transform: rotateZ(0deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        // Breakpoint ================================================================================
-        @media (max-width: 1600px) {
-
+            background: #162b3e;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+    
+            // Planet 1 ===================================================================================
             .content-planet1 {
                 height: 100vh;
                 width: 100%;
                 margin-top: 0vh;
-
+    
                 img {
-                    width: 35em;
-                    margin-left: 58em;
+                    width: 50em;
+                    margin-left: 68em;
                     margin-top: 20em;
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet1-part2 {
                 img {
-                    margin-left: 49em;
-                    margin-top: 50em;
+                    margin-left: 60em;
+                    margin-top: 82em;
                     transform: rotateZ(45deg);
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet1-part3 {
                 img {
                     margin-left: 3em;
-                    margin-top: 100em;
+                    margin-top: 145em;
                     transform: rotateZ(80deg);
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet1-part4 {
                 img {
-                    margin-left: 50em;
-                    margin-top: 142em;
+                    margin-left: 58em;
+                    margin-top: 215em;
                     transform: rotateZ(0deg);
                     transition: ease-in-out 1s;
                 }
             }
-
-        }
-
-        // Planet 2 ===================================================================================
-
-        .content-planet2 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-
-            img {
-                width: 25em;
-                margin-left: 2em;
-                margin-top: 35em;
-                transition: ease-in-out 1s;
+    
+            // Planet 2 ===================================================================================
+    
+            .content-planet2 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+    
+                img {
+                    width: 25em;
+                    margin-left: 2em;
+                    margin-top: 35em;
+                    transition: ease-in-out 1s;
+                }
             }
-        }
-
-        .content-planet2-part2 {
-            img {
-                margin-left: 2em;
-                margin-top: 114em;
-                transform: rotateZ(30deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet2-part3 {
-            img {
-                margin-left: 80em;
-                margin-top: 175em;
-                transform: rotateZ(60deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet2-part4 {
-            img {
-                margin-left: -2em;
-                margin-top: 240em;
-                transform: rotateZ(90deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        // Breakpoint ================================================================================
-        @media (max-width: 1600px) {
+    
             .content-planet2-part2 {
                 img {
-                    margin-left: 1em;
-                    margin-top: 70em;
+                    margin-left: 2em;
+                    margin-top: 114em;
                     transform: rotateZ(30deg);
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet2-part3 {
                 img {
-                    margin-left: 62em;
-                    margin-top: 82em;
+                    margin-left: 80em;
+                    margin-top: 175em;
                     transform: rotateZ(60deg);
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet2-part4 {
                 img {
                     margin-left: -2em;
-                    margin-top: 158em;
+                    margin-top: 240em;
                     transform: rotateZ(90deg);
                     transition: ease-in-out 1s;
                 }
             }
-        }
-
-        // Planet 3 ===================================================================================
-
-        .content-planet3 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-
-            img {
-                width: 15em;
-                margin-left: 10em;
-                margin-top: 2em;
-                transition: ease-in-out 1s;
+    
+    
+    
+            // Planet 3 ===================================================================================
+    
+            .content-planet3 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+    
+                img {
+                    width: 15em;
+                    margin-left: 10em;
+                    margin-top: 2em;
+                    transition: ease-in-out 1s;
+                }
+    
+    
             }
-
-
-        }
-
-        .content-planet3-part2 {
-            img {
-                margin-left: 18em;
-                margin-top: 66em;
-                transform: rotateZ(10deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet3-part3 {
-            img {
-                margin-left: 58em;
-                margin-top: 126em;
-                transform: rotateZ(60deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-        .content-planet3-part4 {
-            img {
-                margin-left: 14em;
-                margin-top: 198em;
-                transform: rotateZ(90deg);
-                transition: ease-in-out 1s;
-            }
-        }
-
-
-        // Breakpoint ================================================================================
-        @media (max-width: 1600px) {
+    
             .content-planet3-part2 {
                 img {
-                    margin-left: 12em;
-                    margin-top: 44em;
+                    margin-left: 18em;
+                    margin-top: 66em;
                     transform: rotateZ(10deg);
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet3-part3 {
                 img {
                     margin-left: 58em;
@@ -233,662 +131,545 @@
                     transition: ease-in-out 1s;
                 }
             }
-
+    
             .content-planet3-part4 {
                 img {
                     margin-left: 14em;
-                    margin-top: 130em;
+                    margin-top: 198em;
                     transform: rotateZ(90deg);
                     transition: ease-in-out 1s;
                 }
             }
-        }
-
-        // Stars background ===================================================================================
-        #content-bgStars {
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-            margin-top: -100vh;
-
-            #bgStars {
-                height: 100vh;
-                width: 100%;
-            }
-
-            #bgStars2 {
-                max-height: 60vh;
-                width: 100%;
-                margin-top: -60vh;
-                overflow: hidden;
-            }
-        }
-
-        //   Background font
-
-        #part2-animation,
-        #part3-animation,
-        #part4-animation {
-            height: 100vh;
-            width: 100%;
-
-            .bgStars {
-                height: 100vh;
-                width: 100%;
-            }
-
-            .bgStars2 {
-                max-height: 60vh;
-                width: 100%;
-                margin-top: -60vh;
-                overflow: hidden;
-            }
-        }
-    }
-
-    // Miscellaneous ===================================================================================
-    .content-animatetion-miscellaneous {
-        height: auto;
-        width: 100%;
-        margin-top: -400vh;
-        z-index: 2;
-        position: relative;
-
-        // Rocket ===================================================================================
-        .content-c-rocket {
-            height: 100vh;
-            width: 100%;
-            transition: ease-in-out 1s;
-
-            .content-rocket {
+    
+    
+    
+            // Stars background ===================================================================================
+            #content-bgStars {
                 height: 100vh;
                 width: 100%;
                 overflow: hidden;
-                transition: ease-in-out 1s;
-
-                .rocket {
-                    width: 35em;
-                    transform: rotateZ(140deg);
-                    margin-left: 48em;
-                    margin-top: 0em;
-                    transition: ease-in-out 1s;
+                margin-top: -100vh;
+    
+                #bgStars {
+                    height: 100vh;
+                    width: 100%;
+                }
+    
+                #bgStars2 {
+                    max-height: 60vh;
+                    width: 100%;
+                    margin-top: -60vh;
+                    overflow: hidden;
+                }
+            }
+    
+            //   Background font
+    
+            #part2-animation,
+            #part3-animation,
+            #part4-animation {
+                height: 100vh;
+                width: 100%;
+    
+                .bgStars {
+                    height: 100vh;
+                    width: 100%;
+                }
+    
+                .bgStars2 {
+                    max-height: 60vh;
+                    width: 100%;
+                    margin-top: -60vh;
+                    overflow: hidden;
                 }
             }
         }
-
-        .content-rocket-part2 {
-            margin-top: 68em !important;
-            transition: ease-in-out 1s !important;
-
-            .rocket {
-                transform: rotateZ(220deg) !important;
-                margin-left: 44em !important;
-                margin-top: 2em !important;
-                transition: ease-in-out 1s !important;
-            }
-        }
-
-        .content-rocket-part3 {
-            margin-top: 138em !important;
-            transition: ease-in-out 1s !important;
-
-            .rocket {
-                transform: rotateZ(217deg) !important;
-                margin-left: 28em !important;
-                margin-top: 32em !important;
-                transition: ease-in-out 1s !important;
-            }
-        }
-
-        .content-rocket-part4 {
-            margin-top: 202em !important;
-            transition: ease-in-out 1s !important;
-
-            .rocket {
-                transform: rotateZ(244deg) !important;
-                margin-left: 27em !important;
-                margin-top: -4em !important;
-                transition: ease-in-out 1s !important;
-            }
-        }
-
-
-        // Breakpoint ================================================================================
-        @media (max-width: 1600px) and (min-width: 1401px) {
+    
+        // Miscellaneous ===================================================================================
+        .content-animatetion-miscellaneous {
+            height: auto;
+            width: 100%;
+            margin-top: -400vh;
+            z-index: 2;
+            position: relative;
+    
+            // Rocket ===================================================================================
             .content-c-rocket {
-                .content-rocket {
-                    .rocket {
-                        width: 25em;
-                        transform: rotateZ(140deg);
-                        margin-left: 50em;
-                        margin-top: -2em;
-                        transition: ease-in-out 1s;
-                    }
-                }
-
-                .content-rocket-part2 {
-                    margin-top: 35em !important;
-                    transition: ease-in-out 1s !important;
-
-                    .rocket {
-                        transform: rotateZ(220deg) !important;
-                        margin-left: 44em !important;
-                        margin-top: 2em !important;
-                        transition: ease-in-out 1s !important;
-                    }
-                }
-
-                .content-rocket-part3 {
-                    margin-top: 92em !important;
-                    transition: ease-in-out 1s !important;
-
-                    .rocket {
-                        transform: rotateZ(217deg) !important;
-                        margin-left: 28em !important;
-                        margin-top: 25em !important;
-                        transition: ease-in-out 1s !important;
-                    }
-                }
-
-                .content-rocket-part4 {
-                    margin-top: 134em !important;
-                    transition: ease-in-out 1s !important;
-
-                    .rocket {
-                        transform: rotateZ(244deg) !important;
-                        margin-left: 27em !important;
-                        margin-top: -4em !important;
-                        transition: ease-in-out 1s !important;
-                    }
-                }
-
-
-            }
-
-
-        }
-
-
-        // Satellite ===================================================================================
-        .content-c-satellite {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-            transition: ease-in-out 1s;
-
-            .content-satellite {
                 height: 100vh;
                 width: 100%;
-                overflow: hidden;
                 transition: ease-in-out 1s;
-
-                .satellite {
-                    width: 35em;
-                    transform: rotateZ(0deg);
-                    margin-left: 10em;
-                    margin-top: 40em;
+    
+                .content-rocket {
+                    height: 100vh;
+                    width: 100%;
+                    overflow: hidden;
                     transition: ease-in-out 1s;
-                }
-
-                @media (max-width: 1600px) {
-                    .satellite {
-                        width: 20em;
-                        transform: rotateZ(0deg);
-                        margin-left: 6em;
-                        margin-top: 26em;
+    
+                    .rocket {
+                        width: 35em;
+                        transform: rotateZ(140deg);
+                        margin-left: 48em;
+                        margin-top: 0em;
                         transition: ease-in-out 1s;
                     }
                 }
             }
-        }
-
-        .content-satellite-part2 {
-            margin-top: 0em !important;
-            transition: ease-in-out 1s !important;
-
-            .satellite {
-                transform: rotateZ(10deg) !important;
-                margin-left: 0em !important;
-                margin-top: 22em !important;
+    
+            .content-rocket-part2 {
+                margin-top: 68em !important;
                 transition: ease-in-out 1s !important;
+    
+                .rocket {
+                    transform: rotateZ(220deg) !important;
+                    margin-left: 44em !important;
+                    margin-top: 2em !important;
+                    transition: ease-in-out 1s !important;
+                }
             }
-        }
-
-        .content-satellite-part3 {
-            margin-top: 0em !important;
-            transition: ease-in-out 1s !important;
-
-            .satellite {
-                transform: rotateZ(10deg) !important;
-                margin-left: 68em !important;
-                margin-top: -2em !important;
+    
+            .content-rocket-part3 {
+                margin-top: 138em !important;
                 transition: ease-in-out 1s !important;
+    
+                .rocket {
+                    transform: rotateZ(217deg) !important;
+                    margin-left: 28em !important;
+                    margin-top: 32em !important;
+                    transition: ease-in-out 1s !important;
+                }
             }
-        }
-
-        .content-satellite-part4 {
-            margin-top: 15em !important;
-            transition: ease-in-out 1s !important;
-
-            .satellite {
-                transform: rotateZ(10deg) !important;
-                margin-left: 13em !important;
-                margin-top: 26em !important;
+    
+            .content-rocket-part4 {
+                margin-top: 202em !important;
                 transition: ease-in-out 1s !important;
+    
+                .rocket {
+                    transform: rotateZ(244deg) !important;
+                    margin-left: 27em !important;
+                    margin-top: -4em !important;
+                    transition: ease-in-out 1s !important;
+                }
             }
-        }
-
-        @media (max-width: 1600px) {
+    
+    
+            // Satellite ===================================================================================
+            .content-c-satellite {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+                transition: ease-in-out 1s;
+    
+                .content-satellite {
+                    height: 100vh;
+                    width: 100%;
+                    overflow: hidden;
+                    transition: ease-in-out 1s;
+    
+                    .satellite {
+                        width: 35em;
+                        transform: rotateZ(0deg);
+                        margin-left: 10em;
+                        margin-top: 40em;
+                        transition: ease-in-out 1s;
+                    }
+    
+    
+                }
+            }
+    
+            .content-satellite-part2 {
+                margin-top: 0em !important;
+                transition: ease-in-out 1s !important;
+    
+                .satellite {
+                    transform: rotateZ(10deg) !important;
+                    margin-left: 0em !important;
+                    margin-top: 22em !important;
+                    transition: ease-in-out 1s !important;
+                }
+            }
+    
+            .content-satellite-part3 {
+                margin-top: 0em !important;
+                transition: ease-in-out 1s !important;
+    
+                .satellite {
+                    transform: rotateZ(10deg) !important;
+                    margin-left: 68em !important;
+                    margin-top: -2em !important;
+                    transition: ease-in-out 1s !important;
+                }
+            }
+    
             .content-satellite-part4 {
+                margin-top: 15em !important;
+                transition: ease-in-out 1s !important;
+    
                 .satellite {
                     transform: rotateZ(10deg) !important;
                     margin-left: 13em !important;
-                    margin-top: 17em !important;
+                    margin-top: 26em !important;
                     transition: ease-in-out 1s !important;
                 }
             }
-        }
-
-        // paragraph 1 ===================================================================================
-        .content-c-paragraph1 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-            opacity: 1;
-            transition: ease-in-out 0.5s;
-            overflow: hidden;
-
-            .content-paragraph1 {
+    
+    
+    
+            // paragraph 1 ===================================================================================
+            .content-c-paragraph1 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+                opacity: 1;
                 transition: ease-in-out 0.5s;
-                color: white;
-                width: 35em;
-                height: 10em;
-                margin-top: 28em;
-                margin-left: 30em;
-                border-radius: 8px;
-
-                .title-paragpraph {
+                overflow: hidden;
+    
+                .content-paragraph1 {
                     transition: ease-in-out 0.5s;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: flex-start;
-
-                    img {
+                    color: white;
+                    width: 35em;
+                    height: 10em;
+                    margin-top: 28em;
+                    margin-left: 30em;
+                    border-radius: 8px;
+    
+                    .title-paragpraph {
                         transition: ease-in-out 0.5s;
-                        width: 7.5em;
-                        margin-top: 0.4em;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: flex-start;
+    
+                        img {
+                            transition: ease-in-out 0.5s;
+                            width: 7.5em;
+                            margin-top: 0.4em;
+                        }
+    
+                        p {
+                            transition: ease-in-out 0.5s;
+                            font-size: 3em;
+                            font-weight: bold;
+                            margin: 0px;
+                            margin-left: -0.3em;
+                        }
                     }
-
+    
                     p {
                         transition: ease-in-out 0.5s;
-                        font-size: 3em;
+                        margin: 0px;
+                        width: 29em;
+                        font-size: 0.8em;
+                        margin-left: 2em;
+                        margin-top: 1em;
+                        line-height: 1.4em;
+                    }
+    
+                    .saeta-r1 {
+                        width: 3em;
+                        transform: rotateZ(270deg);
+                        position: relative;
+                        top: -180px;
+                    }
+    
+                    .saeta-r2 {
+                        width: 3em;
+                        transform: rotateZ(180deg);
+                        position: relative;
+                        top: 0px;
+                        left: -48px;
+                    }
+    
+                    .saeta-r3 {
+                        width: 3em;
+                        transform: rotateZ(0deg);
+                        position: relative;
+                        top: -180px;
+                        left: 280px;
+                    }
+    
+                    .saeta-r4 {
+                        width: 3em;
+                        transform: rotateZ(90deg);
+                        position: relative;
+                        top: 0px;
+                        left: 232px;
+                    }
+    
+                    #startext1 {
+                        position: relative;
+                        top: -245px;
+                        left: -60px;
+                    }
+                }
+    
+            }
+    
+            .content-paragraph1-off {
+                // visibility: hidden;
+                opacity: 0;
+                transition: ease-in-out 0.5s;
+            }
+    
+            // paragraph 2 ===================================================================================
+            .content-c-paragraph2 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -75vh;
+                transition: ease-in-out 0.5s;
+                overflow: hidden;
+                z-index: 2 !important;
+    
+                .content-paragraph2 {
+                    opacity: 0;
+                    transition: ease-in-out 0.5s;
+                    color: white;
+                    width: 35em;
+                    height: 10em;
+                    margin-top: 14em;
+                    margin-left: 34em;
+                    border-radius: 8px;
+    
+                    .title-content {
+                        transition: ease-in-out 0.5s;
+                        font-size: 2em;
                         font-weight: bold;
                         margin: 0px;
                         margin-left: -0.3em;
+                        width: 8em;
+    
+                        p {
+                            margin: 0px;
+                            width: 7em;
+                            transition: ease-in-out 0.5s;
+                        }
+    
+                        button {
+                            border: none;
+                            border-radius: 8px;
+                            color: white;
+                            font-weight: bold;
+                            background-color: #fe9900;
+                            width: 100%;
+                            padding: 0.5em 0em;
+                            width: 17em;
+                            transition: ease-in-out 0.5s;
+                            cursor: pointer;
+                        }
                     }
-                }
-
-                p {
-                    transition: ease-in-out 0.5s;
-                    margin: 0px;
-                    width: 29em;
-                    font-size: 0.8em;
-                    margin-left: 2em;
-                    margin-top: 1em;
-                    line-height: 1.4em;
-                }
-
-                .saeta-r1 {
-                    width: 3em;
-                    transform: rotateZ(270deg);
-                    position: relative;
-                    top: -180px;
-                }
-
-                .saeta-r2 {
-                    width: 3em;
-                    transform: rotateZ(180deg);
-                    position: relative;
-                    top: 0px;
-                    left: -48px;
-                }
-
-                .saeta-r3 {
-                    width: 3em;
-                    transform: rotateZ(0deg);
-                    position: relative;
-                    top: -180px;
-                    left: 280px;
-                }
-
-                .saeta-r4 {
-                    width: 3em;
-                    transform: rotateZ(90deg);
-                    position: relative;
-                    top: 0px;
-                    left: 232px;
-                }
-
-                #startext1 {
-                    position: relative;
-                    top: -245px;
-                    left: -60px;
-                }
-            }
-
-            @media (max-width: 1600px) {
-                .content-paragraph1 {
-                    margin-top: 18em;
-                }
-
-            }
-        }
-
-        .content-paragraph1-off {
-            // visibility: hidden;
-            opacity: 0;
-            transition: ease-in-out 0.5s;
-        }
-
-        // paragraph 2 ===================================================================================
-        .content-c-paragraph2 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -75vh;
-            transition: ease-in-out 0.5s;
-            overflow: hidden;
-            z-index: 2 !important;
-
-            .content-paragraph2 {
-                opacity: 0;
-                transition: ease-in-out 0.5s;
-                color: white;
-                width: 35em;
-                height: 10em;
-                margin-top: 14em;
-                margin-left: 34em;
-                border-radius: 8px;
-
-                .title-content {
-                    transition: ease-in-out 0.5s;
-                    font-size: 2em;
-                    font-weight: bold;
-                    margin: 0px;
-                    margin-left: -0.3em;
-                    width: 8em;
-
-                    p {
+    
+                    .info-paragraph {
+                        margin-top: 1em !important;
+                        width: 25em;
                         margin: 0px;
-                        width: 7em;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size: 0.9em;
                         transition: ease-in-out 0.5s;
                     }
-
-                    button {
-                        border: none;
-                        border-radius: 8px;
-                        color: white;
-                        font-weight: bold;
-                        background-color: #fe9900;
-                        width: 100%;
-                        padding: 0.5em 0em;
-                        width: 17em;
-                        transition: ease-in-out 0.5s;
-                        cursor: pointer;
-                    }
-                }
-
-                .info-paragraph {
-                    margin-top: 1em !important;
-                    width: 25em;
-                    margin: 0px;
-                    margin-left: -0.8em;
-                    line-height: 1.2em;
-                    font-size: 0.9em;
-                    transition: ease-in-out 0.5s;
-                }
-
-                .img-moon {
-                    width: 32em;
-                    position: relative;
-                    top: -24em;
-                    left: 31.5em;
-                }
-
-                #startext2 {
-                    position: relative;
-                    top: -48em;
-                    left: -8em;
-                }
-            }
-
-            // Breakpoint ================================================================================
-            @media (max-width: 1600px) {
-
-                .content-paragraph2 {
-                    margin-top: 14em;
-                    margin-left: 25em;
-
+    
                     .img-moon {
-                        width: 28em;
+                        width: 32em;
                         position: relative;
-                        top: -22em;
-                        left: 27.5em;
+                        top: -24em;
+                        left: 31.5em;
+                    }
+    
+                    #startext2 {
+                        position: relative;
+                        top: -48em;
+                        left: -8em;
                     }
                 }
-
+    
+    
             }
-        }
-
-        .content-paragraph2-on {
-            opacity: 1 !important;
-            transition: ease-in-out 0.5s;
-        }
-
-        .content-c-paragraph2-off {
-            margin-top: -100vh;
-
-            .content-paragraph2 {
-                opacity: 0 !important;
+    
+            .content-paragraph2-on {
+                opacity: 1 !important;
                 transition: ease-in-out 0.5s;
             }
-        }
-
-        // paragraph 3 ===================================================================================
-        .content-c-paragraph3 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-            transition: ease-in-out 0.5s;
-            overflow: hidden;
-            z-index: 2 !important;
-
-            .content-paragraph3 {
-                opacity: 0;
-                transition: ease-in-out 0.5s;
-                color: white;
-                width: 35em;
-                height: 10em;
-                margin-top: 20em;
-                margin-left: 56em;
-                border-radius: 8px;
-
-                .title-content {
+    
+            .content-c-paragraph2-off {
+                margin-top: -100vh;
+    
+                .content-paragraph2 {
+                    opacity: 0 !important;
                     transition: ease-in-out 0.5s;
-                    font-size: 2em;
-                    font-weight: bold;
-                    margin: 0px;
-                    margin-left: -0.3em;
-                    width: 9em;
-
-                    p {
-                        margin: 0px;
-                        width: 9em;
-                        transition: ease-in-out 0.5s;
-                    }
-
-                    button {
-                        border: none;
-                        border-radius: 8px;
-                        color: white;
-                        font-weight: bold;
-                        background-color: #fe9900;
-                        width: 100%;
-                        padding: 0.5em 0em;
-                        width: 17em;
-                        transition: ease-in-out 0.5s;
-                        cursor: pointer;
-                    }
-                }
-
-                .info-paragraph {
-                    margin-top: 1em !important;
-                    width: 25em;
-                    margin: 0px;
-                    margin-left: -0.8em;
-                    line-height: 1.2em;
-                    font-size: 0.9em;
-                    transition: ease-in-out 0.5s;
-                }
-
-                .img-moon {
-                    width: 28em;
-                    position: relative;
-                    top: -23.5em;
-                    left: -43.5em;
-                }
-
-                #startext3 {
-                    position: relative;
-                    top: -50em;
-                    left: -8em;
                 }
             }
-
-            @media (max-width: 1600px) {
+    
+            // paragraph 3 ===================================================================================
+            .content-c-paragraph3 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+                transition: ease-in-out 0.5s;
+                overflow: hidden;
+                z-index: 2 !important;
+    
                 .content-paragraph3 {
                     opacity: 0;
                     transition: ease-in-out 0.5s;
                     color: white;
                     width: 35em;
                     height: 10em;
-                    margin-top: 13em;
-                    margin-left: 43em;
+                    margin-top: 20em;
+                    margin-left: 56em;
                     border-radius: 8px;
     
-                    .img-moon {
-                        width: 22em;
-                        top: -17.5em;
-                        left: -33.5em;
-                    }
-    
-                }
-            }
-        }
-
-        .content-paragraph3-on {
-            // visibility: hidden;
-            opacity: 1 !important;
-            transition: ease-in-out 0.5s;
-        }
-
-        .content-paragraph3-off {
-            // visibility: hidden;
-            opacity: 0 !important;
-            transition: ease-in-out 0.5s;
-        }
-
-        // paragraph 4 ===================================================================================
-        .content-c-paragraph4 {
-            height: 100vh;
-            width: 100%;
-            margin-top: -100vh;
-            transition: ease-in-out 0.5s;
-            overflow: hidden;
-            z-index: 2 !important;
-
-            .content-paragraph4 {
-                opacity: 0;
-                transition: ease-in-out 0.5s;
-                color: white;
-                width: 35em;
-                height: 10em;
-                margin-top: 15em;
-                margin-left: 30em;
-                border-radius: 8px;
-
-                .title-content {
-                    transition: ease-in-out 0.5s;
-                    font-size: 2em;
-                    font-weight: bold;
-                    margin: 0px;
-                    margin-left: -0.3em;
-                    width: 9em;
-
-                    p {
-                        margin: 0px;
-                        width: 9em;
+                    .title-content {
                         transition: ease-in-out 0.5s;
-                    }
-
-                    button {
-                        border: none;
-                        border-radius: 8px;
-                        color: white;
+                        font-size: 2em;
                         font-weight: bold;
-                        background-color: #fe9900;
-                        width: 100%;
-                        padding: 0.5em 0em;
-                        width: 17em;
-                        transition: ease-in-out 0.5s;
-                        cursor: pointer;
+                        margin: 0px;
+                        margin-left: -0.3em;
+                        width: 9em;
+    
+                        p {
+                            margin: 0px;
+                            width: 9em;
+                            transition: ease-in-out 0.5s;
+                        }
+    
+                        button {
+                            border: none;
+                            border-radius: 8px;
+                            color: white;
+                            font-weight: bold;
+                            background-color: #fe9900;
+                            width: 100%;
+                            padding: 0.5em 0em;
+                            width: 17em;
+                            transition: ease-in-out 0.5s;
+                            cursor: pointer;
+                        }
                     }
-                }
-
-                .info-paragraph {
-                    margin-top: 1em !important;
-                    width: 25em;
-                    margin: 0px;
-                    margin-left: -0.8em;
-                    line-height: 1.2em;
-                    font-size: 0.9em;
-                    transition: ease-in-out 0.5s;
-                }
-
-                .img-moon {
-                    width: 36em;
-                    position: relative;
-                    top: -20.5em;
-                    left: 32.5em;
-                }
-
-                #startext4 {
-                    position: relative;
-                    top: -38em;
-                    left: -8em;
-                }
-            }
-
-            @media (max-width: 1600px) {
-                .content-paragraph4 {
-                    margin-top: 5em;
-                    margin-left: 26em;
+    
+                    .info-paragraph {
+                        margin-top: 1em !important;
+                        width: 25em;
+                        margin: 0px;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size: 0.9em;
+                        transition: ease-in-out 0.5s;
+                    }
     
                     .img-moon {
-                        width: 30em;
+                        width: 28em;
                         position: relative;
-                        top: -19.5em;
-                        left: 26.5em;
+                        top: -23.5em;
+                        left: -43.5em;
                     }
     
-                } 
+                    #startext3 {
+                        position: relative;
+                        top: -50em;
+                        left: -8em;
+                    }
+                }
+    
+    
             }
-        }
-
-        .content-paragraph4-on {
-            // visibility: hidden;
-            opacity: 1 !important;
-            transition: ease-in-out 0.5s;
+    
+            .content-paragraph3-on {
+                // visibility: hidden;
+                opacity: 1 !important;
+                transition: ease-in-out 0.5s;
+            }
+    
+            .content-paragraph3-off {
+                // visibility: hidden;
+                opacity: 0 !important;
+                transition: ease-in-out 0.5s;
+            }
+    
+            // paragraph 4 ===================================================================================
+            .content-c-paragraph4 {
+                height: 100vh;
+                width: 100%;
+                margin-top: -100vh;
+                transition: ease-in-out 0.5s;
+                overflow: hidden;
+                z-index: 2 !important;
+    
+                .content-paragraph4 {
+                    opacity: 0;
+                    transition: ease-in-out 0.5s;
+                    color: white;
+                    width: 35em;
+                    height: 10em;
+                    margin-top: 15em;
+                    margin-left: 30em;
+                    border-radius: 8px;
+    
+                    .title-content {
+                        transition: ease-in-out 0.5s;
+                        font-size: 2em;
+                        font-weight: bold;
+                        margin: 0px;
+                        margin-left: -0.3em;
+                        width: 9em;
+    
+                        p {
+                            margin: 0px;
+                            width: 9em;
+                            transition: ease-in-out 0.5s;
+                        }
+    
+                        button {
+                            border: none;
+                            border-radius: 8px;
+                            color: white;
+                            font-weight: bold;
+                            background-color: #fe9900;
+                            width: 100%;
+                            padding: 0.5em 0em;
+                            width: 17em;
+                            transition: ease-in-out 0.5s;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .info-paragraph {
+                        margin-top: 1em !important;
+                        width: 25em;
+                        margin: 0px;
+                        margin-left: -0.8em;
+                        line-height: 1.2em;
+                        font-size: 0.9em;
+                        transition: ease-in-out 0.5s;
+                    }
+    
+                    .img-moon {
+                        width: 36em;
+                        position: relative;
+                        top: -20.5em;
+                        left: 32.5em;
+                    }
+    
+                    #startext4 {
+                        position: relative;
+                        top: -38em;
+                        left: -8em;
+                    }
+                }
+    
+            }
+    
+            .content-paragraph4-on {
+                // visibility: hidden;
+                opacity: 1 !important;
+                transition: ease-in-out 0.5s;
+            }
         }
     }
-}
+
+
+
+
+
+
+
+

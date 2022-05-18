@@ -67,7 +67,7 @@
 <script>
 export default {
   mounted() {
-    alert(screen.width +  " " +  screen.height);
+    // alert(screen.width +  " " +  screen.height);
     
     let animation1 = bodymovin.loadAnimation({
       animationData: {

@@ -1,141 +1,84 @@
-const scrolls = function () {
+const scrolls = function (i) {
     let controller = new ScrollMagic.Controller();
-    // Planet1 animation ===========================================================================
-    let planet1Scene1 = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#planet1", "content-planet1-part2")
-        .addTo(controller);
-
-    let planet1Scene2 = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#planet1", "content-planet1-part3")
-        .addTo(controller);
-
-    let planet1Scene3 = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#planet1", "content-planet1-part4")
-        .addTo(controller);
-
-    // Planet2 animation ===========================================================================
-
-    let planet2Scene1 = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#planet2", "content-planet2-part2")
-        .addTo(controller);
-
-    let planet2Scene2 = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#planet2", "content-planet2-part3")
-        .addTo(controller);
-
-    let planet2Scene3 = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#planet2", "content-planet2-part4")
-        .addTo(controller);
-
-    // Planet3 animation ===========================================================================
-    let planet3Scene1 = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#planet3", "content-planet3-part2")
-        .addTo(controller);
-
-    let planet3Scene2 = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#planet3", "content-planet3-part3")
-        .addTo(controller);
-
-    let planet3Scene3 = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#planet3", "content-planet3-part4")
-        .addTo(controller);
-
-    // rocket animation ===========================================================================
-    let rocketScene1 = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#c-rocket", "content-rocket-part2")
-        .addTo(controller);
-
-    let rocketScene2 = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#c-rocket", "content-rocket-part3")
-        .addTo(controller);
-
-    let rocketScene3 = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#c-rocket", "content-rocket-part4")
-        .addTo(controller);
-
-    // rocket animation ===========================================================================
-    let satelliteScene1 = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#c-satellite", "content-satellite-part2")
-        .addTo(controller);
-
-    let satelliteScene2 = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#c-satellite", "content-satellite-part3")
-        .addTo(controller);
-
-    let satelliteScene3 = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#c-satellite", "content-satellite-part4")
-        .addTo(controller);
-
-    // paragraph1 animation ===========================================================================
-    let paragraph1Off = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#c-paragraph1", "content-paragraph1-off")
-        .addTo(controller);
-
-    // paragraph2 animation ===========================================================================
-    let paragraph2On = new ScrollMagic.Scene({
-        triggerElement: "#part2-animation",
-    })
-        .setClassToggle("#c-paragraph2", "content-paragraph2-on")
-        .addTo(controller);
-
-    let paragraph2Off = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#content-c-paragraph2", "content-c-paragraph2-off")
-        .addTo(controller);
+    // Scene  animation ===========================================================================
 
 
-    // paragraph3 animation ===========================================================================
-    let paragraph3On = new ScrollMagic.Scene({
-        triggerElement: "#part3-animation",
-    })
-        .setClassToggle("#c-paragraph3", "content-paragraph3-on")
-        .addTo(controller);
+    if (i != 1) {
+        new ScrollMagic.Scene({
+            triggerElement: `#beginSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet1`, "animate__backInRight")
+            .addTo(controller);
+    
+        new ScrollMagic.Scene({
+            triggerElement: `#beginSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet2`, "animate__backInRight")
+            .addTo(controller);
+    
+        new ScrollMagic.Scene({
+            triggerElement: `#beginSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet3`, "animate__backInRight")
+            .addTo(controller);
+    
+        new ScrollMagic.Scene({
+            triggerElement: `#beginSection${i}`,
+        })
+            .setClassToggle(`#S${i}satelliteC`, "animate__backInLeft")
+            .addTo(controller);
+    
+        new ScrollMagic.Scene({
+            triggerElement: `#beginSection${i}`,
+        })
+            .setClassToggle(`#S${i}c-paragraph`, "animate__backInLeft")
+            .addTo(controller);
+    }
 
-    let paragraph3Off = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#c-paragraph3", "content-paragraph3-off")
-        .addTo(controller);
 
-    // paragraph4 animation ===========================================================================
-    let paragraph4On = new ScrollMagic.Scene({
-        triggerElement: "#part4-animation",
-    })
-        .setClassToggle("#c-paragraph4", "content-paragraph4-on")
-        .addTo(controller);
+
+
+
+
+
+
+
+
+
+         new ScrollMagic.Scene({
+            triggerElement: `#finalSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet1`, "animate__backOutRight")
+            .addTo(controller);
+    
+         new ScrollMagic.Scene({
+            triggerElement: `#finalSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet2`, "animate__backOutRight")
+            .addTo(controller);
+    
+         new ScrollMagic.Scene({
+            triggerElement: `#finalSection${i}`,
+        })
+            .setClassToggle(`#S${i}planet3`, "animate__backOutRight")
+            .addTo(controller);
+    
+         new ScrollMagic.Scene({
+            triggerElement: `#finalSection${i}`,
+        })
+            .setClassToggle(`#S${i}satelliteC`, "animate__backOutLeft")
+            .addTo(controller);
+    
+         new ScrollMagic.Scene({
+            triggerElement: `#finalSection${i}`,
+        })
+            .setClassToggle(`#S${i}c-paragraph`, "animate__backOutLeft")
+            .addTo(controller);
+
+
+    
+    
+
 
 }
 

@@ -17,7 +17,7 @@
       </div>
 
       <div class="content-paragraph">
-        <p>
+        <p class="paragraph">
           Informacion de ejemplo Lorem Ipsum is simply dummy text of the
           printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took
@@ -210,5 +210,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/home/section4/home-section4-fullhd.scss";
 @import "../../assets/scss/home/section4/home-section4.scss";
 </style>
