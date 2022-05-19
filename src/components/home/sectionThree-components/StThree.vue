@@ -367,4 +367,103 @@ export default {
         }
     }
 }
+
+@media (min-width: 1600px) {
+    .content-animation {
+
+
+        .content-planet1 {
+
+            img {
+                width: 50em;
+                margin-top: 7em;
+                margin-left: 0em;
+            }
+        }
+
+        .content-planet2 {
+
+            img {
+                width: 30em;
+                margin-top: 41em;
+                margin-left: 86em;
+            }
+        }
+
+        .content-planet3 {
+
+            img {
+                width: 20em;
+                margin-top: 0em;
+                margin-left: 78em;
+            }
+        }
+
+        .content-bgStars {
+
+            #S1bgStars {
+                width: 110em;
+            }
+
+            #S1bgStars2 {
+                width: 110em;
+            }
+        }
+    }
+
+    .content-animation2 {
+        width: 100%;
+
+        .content-c-satellite {
+            width: 100%;
+            top: 0vh !important;
+
+            .content-satellite {
+                width: 100%;
+                overflow: hidden;
+
+                .satellite {
+                    width: 25em;
+                    margin-top: 45em;
+                    margin-left: 37em;
+                }
+            }
+        }
+
+        .content-c-paragraph {
+            width: 100%;
+            top: -100vh;
+            z-index: 6;
+
+            .content-paragraph {
+                width: 35em;
+                height: 10em;
+                margin-top: -12em;
+                margin-left: 42em;
+
+                .info-paragraph {
+                    margin-top: 1em !important;
+                    width: 25em;
+                    margin: 0px;
+                    margin-left: -0.8em;
+                    line-height: 1.4em;
+                    font-size: 1.2em;
+                }
+
+                .img-moon {
+                    width: 28em;
+                    top: -30em;
+                    left: -48em;
+                }
+
+                #S3startext {
+                    top: -55em;
+                    left: -8em;
+                }
+            }
+
+        }
+    }
+
+}
 </style>

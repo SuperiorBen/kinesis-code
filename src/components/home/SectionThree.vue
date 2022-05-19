@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .content-sections {
   width: 100%;
-  height: 300vh;
+  height: 400vh;
   background: #162b3e;
   overflow: hidden;
 }
