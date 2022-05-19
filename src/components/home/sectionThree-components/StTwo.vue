@@ -230,4 +230,252 @@ export default {
 
     }
 }
+
+
+@media (min-width: 430px) {
+    .content-animation {
+        width: 100%;
+
+        .content-planet1 {
+            width: 100%;
+
+            img {
+                width: 35em;
+                margin-top: 7em;
+                margin-left: 42em;
+            }
+        }
+
+        .content-planet2 {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            transition: ease-in-out 1s;
+            position: relative;
+            z-index: 3;
+            top: -100vh;
+
+            img {
+                width: 25em;
+                margin-top: 30em;
+                margin-left: -3em;
+                transition: ease-in-out 1s;
+            }
+        }
+
+        .content-planet3 {
+            top: -200vh;
+
+            img {
+                width: 15em;
+                margin-top: 2em;
+                margin-left: 1em;
+                transition: ease-in-out 1s;
+            }
+        }
+
+        .content-bgStars {
+            width: 100%;
+            height: 100vh;
+            transition: ease-in-out 1s;
+            position: relative;
+            z-index: 1;
+            top: -300vh;
+
+            #S2bgStars {
+                width: 96em;
+                transform: rotate(0deg);
+                margin-left: 0em;
+            }
+
+            #S2bgStars2 {
+                width: 96em;
+                transform: rotate(0deg);
+                margin-top: -28em;
+            }
+        }
+    }
+
+    .content-animation2 {
+        width: 100%;
+
+        .content-c-satellite {
+            width: 100%;
+            top: 0vh !important;
+
+            .content-satellite {
+                width: 100%;
+                overflow: hidden;
+
+                .satellite {
+                    width: 15em;
+                    margin-top: 19em;
+                    margin-left: 2em;
+                }
+            }
+        }
+
+        .content-c-paragraph {
+            width: 100%;
+            top: -100vh;
+            z-index: 6;
+
+            .content-paragraph {
+                width: 35em;
+                height: 10em;
+                margin-top: -6em;
+                margin-left: -2em;
+
+                .info-paragraph {
+                    margin-top: 1em !important;
+                    width: 25em;
+                    margin: 0px;
+                    margin-left: -0.8em;
+                    line-height: 1.4em;
+                    font-size: 0.9em;
+                }
+
+                .img-moon {
+                    width: 26em;
+                    top: -20em;
+                    left: 27em;
+                }
+
+                #S2startext {
+                    top: -42em;
+                    left: -8em;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .content-animation {
+        width: 100%;
+
+        .content-planet1 {
+            width: 100%;
+
+            img {
+                width: 35em;
+                margin-top: 7em;
+                margin-left: 45em;
+            }
+        }
+
+        .content-planet3 {
+            img {
+                margin-left: 1em;
+            }
+        }
+
+    }
+
+    .content-animation2 {
+        .content-c-paragraph {
+            .content-paragraph {
+                margin-left: -6em;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .content-animation {
+
+        .content-planet1 {
+
+            img {
+                width: 50em;
+                margin-top: 15em;
+                margin-left: 60em;
+            }
+        }
+
+        .content-planet2 {
+
+            img {
+                width: 30em;
+                margin-top: 37em;
+                margin-left: 2em;
+            }
+        }
+
+        .content-planet3 {
+
+            img {
+                width: 20em;
+                margin-top: 2em;
+                margin-left: 8em;
+            }
+        }
+
+        .content-bgStars {
+
+            #S1bgStars {
+                width: 110em;
+            }
+
+            #S1bgStars2 {
+                width: 110em;
+            }
+        }
+    }
+
+    .content-animation2 {
+
+
+        .content-c-satellite {
+
+            .content-satellite {
+
+                .satellite {
+                    width: 25em;
+                    margin-top: 45em;
+                    margin-left: 37em;
+                }
+            }
+        }
+
+        .content-c-paragraph {
+            width: 100%;
+            top: -100vh;
+            z-index: 6;
+
+            .content-paragraph {
+                width: 35em;
+                height: 10em;
+                margin-top: -16em;
+                margin-left: -15em;
+
+                .info-paragraph {
+                    margin-top: 1em !important;
+                    width: 25em;
+                    margin: 0px;
+                    margin-left: -0.8em;
+                    line-height: 1.4em;
+                    font-size: 1.2em;
+                }
+
+                .img-moon {
+                    width: 35em;
+                    top: -16em;
+                    left: 37em;
+                }
+
+                #S2startext {
+                    top: -42em;
+                    left: -8em;
+                }
+            }
+
+        }
+
+
+    }
+
+}
 </style>
