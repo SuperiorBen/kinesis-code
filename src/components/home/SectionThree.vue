@@ -34,9 +34,9 @@ export default {
 
     // define movement of panels
     var wipeAnimation = gsap.timeline()
-      .fromTo("section.panel.two", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone }) 
-      .fromTo("section.panel.three", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })  
-      .fromTo("section.panel.four", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone }); // in from top
+      .fromTo("section.panel.two", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
+      .fromTo("section.panel.three", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
+      .fromTo("section.panel.four", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone }); 
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
@@ -65,19 +65,19 @@ export default {
   position: absolute;
 }
 
-.one{
+.one {
   z-index: 1;
 }
 
-.two{
+.two {
   z-index: 2;
 }
 
-.three{
+.three {
   z-index: 3;
 }
 
-.four{
+.four {
   z-index: 4;
 }
 </style>

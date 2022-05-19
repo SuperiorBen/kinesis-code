@@ -1,13 +1,13 @@
 <template>
     <div class="content-animation">
         <!--Planets -->
-        <div id="S1planet1" data-aos="zoom-out-right" class="content-planet1">
+        <div id="S1planet1" class="content-planet1">
             <img src="../../../assets/images-home/section3/moon.svg" alt="moon" />
         </div>
-        <div id="S1planet2" data-aos="zoom-out-right" class="content-planet2 animate__animated animate__backInLeft">
+        <div id="S1planet2" class="content-planet2 animate__animated animate__backInLeft">
             <img src="../../../assets/images-home/section3/planet1.svg" alt="planet1" />
         </div>
-        <div id="S1planet3" data-aos="zoom-out-right" class="content-planet3 animate__animated animate__backInLeft">
+        <div id="S1planet3" class="content-planet3 animate__animated animate__backInLeft">
             <img src="../../../assets/images-home/section3/planet2.svg" alt="planet2" />
         </div>
 
@@ -20,13 +20,13 @@
     <div id="finalSection1"></div>
     <div class="content-animation2">
 
-        <div id="S1satelliteC" data-aos="zoom-out-left" class="content-c-satellite">
+        <div id="S1satelliteC" class="content-c-satellite">
             <div id="S1c-satellite" class="content-satellite">
                 <div id="S1satellite" class="satellite"></div>
             </div>
         </div>
 
-        <div id="S1c-paragraph" data-aos="zoom-out-left" class="content-c-paragraph">
+        <div id="S1c-paragraph" class="content-c-paragraph">
             <div class="content-paragraph">
                 <div class="title-paragraph">
                     <img src="../../../assets/images-home/section3/logoWhite.svg" alt="" />
@@ -52,14 +52,11 @@
 </template>
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import backgroundStars from "../../../helpers/section3/starsbackground";
 import scrolls from "../../../helpers/section3/scrollsanimations";
 import miscellaneous from "../../../helpers/section3/miscellaneous";
 export default {
     mounted() {
-        AOS.init({delay: 100});
         //   Lottie
         miscellaneous(1);
         backgroundStars(1);

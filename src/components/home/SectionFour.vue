@@ -212,4 +212,5 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/scss/home/section4/home-section4-fullhd.scss";
 @import "../../assets/scss/home/section4/home-section4.scss";
+@import "../../assets/scss/home/section4/home-section4-mobile.scss";
 </style>
