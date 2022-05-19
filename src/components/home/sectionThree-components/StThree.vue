@@ -53,20 +53,14 @@
 </template>
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import backgroundStars from "../../../helpers/section3/starsbackground";
 import scrolls from "../../../helpers/section3/scrollsanimations";
 import miscellaneous from "../../../helpers/section3/miscellaneous";
 export default {
     mounted() {
-        AOS.init();
         //   Lottie
         miscellaneous(3);
         backgroundStars(3);
-        // Scroll magic
-        // scrolls(2);
-        // Background star animation ===========================================================================
     },
 };
 </script>
@@ -77,6 +71,7 @@ export default {
     height: 100vh;
     overflow: hidden;
     transition: ease-in-out 1s;
+    background: #162b3e;
 
     .content-planet1 {
         width: 100vw;

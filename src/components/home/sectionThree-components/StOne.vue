@@ -59,13 +59,10 @@ import scrolls from "../../../helpers/section3/scrollsanimations";
 import miscellaneous from "../../../helpers/section3/miscellaneous";
 export default {
     mounted() {
-        AOS.init({delay: 500});
+        AOS.init({delay: 100});
         //   Lottie
         miscellaneous(1);
         backgroundStars(1);
-        // Scroll magic
-        // scrolls(1);
-        // Background star animation ===========================================================================
     },
 };
 </script>
@@ -76,6 +73,7 @@ export default {
     height: 100vh;
     overflow: hidden;
     transition: ease-in-out 1s;
+    background: #162b3e;
 
     .content-planet1 {
         width: 100vw;
