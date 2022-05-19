@@ -2,13 +2,13 @@
     <div id="beginSection2"></div>
     <div class="content-animation">
         <!--Planets -->
-        <div id="S2planet1" class="content-planet1 animate__animated ">
+        <div id="S2planet1" class="content-planet1">
             <img src="../../../assets/images-home/section3/moon.svg" alt="moon" />
         </div>
-        <div id="S2planet2" class="content-planet2 animate__animated ">
+        <div id="S2planet2" class="content-planet2">
             <img src="../../../assets/images-home/section3/planet1.svg" alt="planet1" />
         </div>
-        <div id="S2planet3" class="content-planet3 animate__animated ">
+        <div id="S2planet3" class="content-planet3">
             <img src="../../../assets/images-home/section3/planet2.svg" alt="planet2" />
         </div>
 
@@ -21,13 +21,13 @@
     <div id="finalSection2"></div>
     <div class="content-animation2">
 
-        <div id="S2satelliteC" class="content-c-satellite animate__animated ">
+        <div id="S2satelliteC" class="content-c-satellite">
             <div id="S2c-satellite" class="content-satellite">
                 <div id="S2satellite" class="satellite"></div>
             </div>
         </div>
 
-        <div id="S2content-c-paragraph" class="content-c-paragraph animate__animated">
+        <div id="S2content-c-paragraph" class="content-c-paragraph">
             <div id="S2c-paragraph" class="content-paragraph">
                 <div class="title-content">
                     <p>We design business cloud infrastructure</p>

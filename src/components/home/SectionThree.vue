@@ -2,6 +2,8 @@
   <div class="content-sections">
     <StOne />
     <StTwo />
+    <StThree />
+    <StFour />
   </div>
 </template>
 
@@ -11,6 +13,8 @@ export default {
   components: {
     StOne: defineAsyncComponent(() => import("./sectionThree-components/StOne.vue")),
     StTwo: defineAsyncComponent(() => import("./sectionThree-components/StTwo.vue")),
+    StThree: defineAsyncComponent(() => import("./sectionThree-components/StThree.vue")),
+    StFour: defineAsyncComponent(() => import("./sectionThree-components/StFour.vue")),
   }
 };
 </script>
@@ -18,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .content-sections {
   width: 100%;
-  height: 200vh;
+  height: 300vh;
   background: #162b3e;
   overflow: hidden;
 }
