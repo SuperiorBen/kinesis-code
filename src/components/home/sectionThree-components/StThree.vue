@@ -149,7 +149,7 @@ export default {
 
             .satellite {
                 width: 12em;
-                margin-top: 0em;
+                margin-top: 23em;
                 margin-left: 13em;
             }
         }
@@ -169,7 +169,7 @@ export default {
             color: white;
             width: 35em;
             height: 10em;
-            margin-top: -25em;
+            margin-top: -74em;
             margin-left: 3em;
             border-radius: 8px;
 

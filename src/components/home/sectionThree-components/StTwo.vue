@@ -21,9 +21,9 @@
     <div id="finalSection2"></div>
     <div class="content-animation2">
 
-        <div id="S2satelliteC" data-aos="zoom-in-up" class="content-c-satellite">
-            <div id="S2c-satellite" class="content-satellite">
-                <div id="S2satellite" class="satellite"></div>
+        <div id="S2astronautC" data-aos="zoom-in-up" class="content-c-astronaut">
+            <div id="S2c-astronaut" class="content-astronaut">
+                <div id="S2astronaut" class="astronaut"></div>
             </div>
         </div>
 
@@ -129,19 +129,19 @@ export default {
     overflow: hidden;
     margin-top: -100vh;
 
-    .content-c-satellite {
+    .content-c-astronaut {
         width: 100vw;
         height: 100vh;
         position: relative;
         z-index: 5;
         top: 0px;
 
-        .content-satellite {
+        .content-astronaut {
             width: 100vw;
             height: 100vh;
 
-            .satellite {
-                width: 12em;
+            .astronaut {
+                width: 14em;
                 margin-top: 0em;
                 margin-left: 13em;
             }
@@ -281,17 +281,17 @@ export default {
     .content-animation2 {
         width: 100%;
 
-        .content-c-satellite {
+        .content-c-astronaut {
             width: 100%;
             top: 0vh !important;
 
-            .content-satellite {
+            .content-astronaut {
                 width: 100%;
                 overflow: hidden;
 
-                .satellite {
-                    width: 15em;
-                    margin-top: 19em;
+                .astronaut {
+                    width: 18em;
+                    margin-top: 13em;
                     margin-left: 2em;
                 }
             }
@@ -363,13 +363,25 @@ export default {
     }
 
     .content-animation2 {
-        .content-c-paragraph {
-            .content-paragraph {
-                margin-left: -6em;
-            }
 
+        .content-c-astronaut {
+            .content-astronaut {
+                .astronaut {
+                    width: 18em;
+                    margin-top: 25em;
+                    margin-left: 10em;
+            }
         }
     }
+
+
+    .content-c-paragraph {
+        .content-paragraph {
+            margin-left: -6em;
+        }
+
+    }
+}
 }
 
 @media (min-width: 1600px) {
@@ -417,13 +429,13 @@ export default {
     .content-animation2 {
 
 
-        .content-c-satellite {
+        .content-c-astronaut {
 
-            .content-satellite {
+            .content-astronaut {
 
-                .satellite {
-                    width: 25em;
-                    margin-top: 45em;
+                .astronaut {
+                    width: 28em;
+                    margin-top: 40em;
                     margin-left: 37em;
                 }
             }
