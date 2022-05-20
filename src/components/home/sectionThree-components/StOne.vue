@@ -1,13 +1,13 @@
 <template>
     <div class="content-animation">
         <!--Planets -->
-        <div id="S1planet1" class="content-planet1">
+        <div id="S1planet1" data-aos="fade-up-left" class="content-planet1">
             <img src="../../../assets/images-home/section3/moon.svg" alt="moon" />
         </div>
-        <div id="S1planet2" class="content-planet2 animate__animated animate__backInLeft">
+        <div id="S1planet2" data-aos="fade-up-right" class="content-planet2 animate__animated animate__backInLeft">
             <img src="../../../assets/images-home/section3/planet1.svg" alt="planet1" />
         </div>
-        <div id="S1planet3" class="content-planet3 animate__animated animate__backInLeft">
+        <div id="S1planet3" data-aos="fade-down-right" class="content-planet3 animate__animated animate__backInLeft">
             <img src="../../../assets/images-home/section3/planet2.svg" alt="planet2" />
         </div>
 
@@ -20,13 +20,13 @@
     <div id="finalSection1"></div>
     <div class="content-animation2">
 
-        <div id="S1satelliteC" class="content-c-satellite">
+        <div data-aos="zoom-in-up" id="S1satelliteC" class="content-c-satellite">
             <div id="S1c-satellite" class="content-satellite">
                 <div id="S1satellite" class="satellite"></div>
             </div>
         </div>
 
-        <div id="S1c-paragraph" class="content-c-paragraph">
+        <div data-aos="zoom-out-down" id="S1c-paragraph" class="content-c-paragraph">
             <div class="content-paragraph">
                 <div class="title-paragraph">
                     <img src="../../../assets/images-home/section3/logoWhite.svg" alt="" />
@@ -52,11 +52,16 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import backgroundStars from "../../../helpers/section3/starsbackground";
-import scrolls from "../../../helpers/section3/scrollsanimations";
 import miscellaneous from "../../../helpers/section3/miscellaneous";
 export default {
     mounted() {
+        AOS.init({
+            delay: 500,
+            duration: 400,
+        });
         //   Lottie
         miscellaneous(1);
         backgroundStars(1);
@@ -69,22 +74,19 @@ export default {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    transition: ease-in-out 1s;
     background: #162b3e;
 
     .content-planet1 {
         width: 100vw;
         height: 100vh;
-        transition: ease-in-out 1s;
         position: relative;
         z-index: 2;
         top: 0px;
 
         img {
-            width: 25em;
+            width: 20em;
             margin-top: 32em;
-            margin-left: 1em;
-            transition: ease-in-out 1s;
+            margin-left: 6em;
         }
     }
 
@@ -95,7 +97,6 @@ export default {
     .content-planet3 {
         width: 100vw;
         height: 100vh;
-        transition: ease-in-out 1s;
         position: relative;
         z-index: 4;
         top: -100vh;
@@ -104,14 +105,12 @@ export default {
             width: 15em;
             margin-top: 2em;
             margin-left: 1em;
-            transition: ease-in-out 1s;
         }
     }
 
     .content-bgStars {
         width: 100vw;
         height: 100vh;
-        transition: ease-in-out 1s;
         position: relative;
         z-index: 1;
         top: -200vh;
@@ -133,13 +132,11 @@ export default {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    transition: ease-in-out 1s;
     margin-top: -100vh;
 
     .content-c-satellite {
         width: 100vw;
         height: 100vh;
-        transition: ease-in-out 1s;
         position: relative;
         z-index: 5;
         top: 0px;
@@ -159,7 +156,6 @@ export default {
     .content-c-paragraph {
         height: 100vh;
         width: 100vw;
-        transition: ease-in-out 0.5s;
         position: relative;
         top: -100vh;
         z-index: 6;
@@ -168,7 +164,6 @@ export default {
         align-items: center;
 
         .content-paragraph {
-            transition: ease-in-out 0.5s;
             color: white;
             width: 22em;
             height: 10em;
@@ -177,7 +172,6 @@ export default {
             border-radius: 8px;
 
             .title-paragraph {
-                transition: ease-in-out 0.5s;
                 width: 20em;
                 display: flex;
                 flex-direction: row;
@@ -185,13 +179,11 @@ export default {
                 align-items: flex-start;
 
                 img {
-                    transition: ease-in-out 0.5s;
                     width: 5em;
                     margin-top: 0.4em;
                 }
 
                 p {
-                    transition: ease-in-out 0.5s;
                     font-size: 2em;
                     font-weight: bold;
                     margin: 0px;
@@ -200,7 +192,6 @@ export default {
             }
 
             p {
-                transition: ease-in-out 0.5s;
                 margin: 0px;
                 width: 22em;
                 font-size: 0.8em;
@@ -257,7 +248,7 @@ export default {
 
             img {
                 width: 40em;
-                margin-top: 6em;
+                margin-top: 4em;
                 margin-left: 44em;
             }
         }
@@ -266,23 +257,20 @@ export default {
             display: block;
             width: 100%;
             height: 100vh;
-            transition: ease-in-out 1s;
             position: relative;
             z-index: 3;
             top: -100vh;
 
             img {
-                width: 25em;
-                margin-top: 30em;
+                width: 20em;
+                margin-top: 24em;
                 margin-left: -3em;
-                transition: ease-in-out 1s;
             }
         }
 
         .content-planet3 {
             width: 100%;
             height: 100vh;
-            transition: ease-in-out 1s;
             position: relative;
             z-index: 4;
             top: -200vh;
@@ -290,8 +278,7 @@ export default {
             img {
                 width: 15em;
                 margin-top: 2em;
-                margin-left: 1em;
-                transition: ease-in-out 1s;
+                margin-left: 8em;
             }
         }
 
@@ -470,7 +457,7 @@ export default {
             }
         }
 
-      
+
     }
 
 }

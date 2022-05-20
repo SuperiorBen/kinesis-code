@@ -1,26 +1,25 @@
 <template>
   <div id="pinContainer" class="content-sections">
 
-    <section class="panel one">
+    <div class="panel one">
       <StOne />
-    </section>
+    </div>
 
-    <section class="panel two">
+    <div class="panel two">
       <StTwo />
-    </section>
+    </div>
 
-    <section class="panel three">
+    <div class="panel three">
       <StThree />
-    </section>
+    </div>
 
-    <section class="panel four">
+    <div class="panel four">
       <StFour />
-    </section>
+    </div>
   </div>
 </template>
 
 <script>
-import { gsap, Linear } from 'gsap';
 import { defineAsyncComponent } from 'vue';
 export default {
   components: {
@@ -32,21 +31,7 @@ export default {
   mounted() {
     var controller = new ScrollMagic.Controller();
 
-    // define movement of panels
-    var wipeAnimation = gsap.timeline()
-      .fromTo("section.panel.two", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
-      .fromTo("section.panel.three", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
-      .fromTo("section.panel.four", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone }); 
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-      triggerElement: "#pinContainer",
-      triggerHook: "onLeave",
-      duration: "300%"
-    })
-      .setPin("#pinContainer")
-      .setTween(wipeAnimation)
-      .addTo(controller);
+    
   }
 };
 </script>
@@ -54,15 +39,15 @@ export default {
 <style lang="scss" scoped>
 #pinContainer {
   width: 100%;
-  height: 100vh;
+  height: 400vh;
   background: #162b3e;
   overflow: hidden;
 }
 
 .panel {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  position: absolute;
+  position: relative;
 }
 
 .one {
