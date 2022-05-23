@@ -67,6 +67,16 @@ export default {
         miscellaneous(3);
         backgroundStars(3);
     },
+    unmounted() {
+        const satellite = document.getElementById("S3satellite");
+        const starText = document.getElementById("S3startext");
+        const stars = document.getElementById("S3bgStars");
+        const stars2 = document.getElementById("S3bgStars2");
+        satellite.innerHTML = "";
+        starText.innerHTML = "";
+        stars.innerHTML = "";
+        stars2.innerHTML = "";
+    }
 };
 </script>
 

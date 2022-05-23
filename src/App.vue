@@ -8,26 +8,36 @@
     </div>
     <img src="./assets/navbar/logo.png" alt="" />
     <ul>
-      <li>WHAT WE DO</li>
-      <li>HOW WE THINK</li>
+      <li>
+        <router-link :to="{ name: 'home' }">WHAT WE DO</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'howWeThink' }">HOW WE THINK</router-link>
+      </li>
       <li>ABOUT US</li>
       <li>CONTACT US</li>
     </ul>
   </nav>
   <main>
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition enter-active-class="animate__animated animate__fadeInRight opacity-5"
+        leave-active-class="animate__animated animate__fadeOutLeft opacity-0" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 <script>
+import 'animate.css';
 export default {
-  methods : {
-  open(){
-    document.getElementById("nav").style.left = "0em";
-  },
-  close(){
-    document.getElementById("nav").style.left = "-20em";
+  methods: {
+    open() {
+      document.getElementById("nav").style.left = "0em";
+    },
+    close() {
+      document.getElementById("nav").style.left = "-20em";
+    }
   }
-}
 };
 </script>
 <style lang="scss">
@@ -57,9 +67,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #fe9900;
 }
+
 .open {
   display: none;
 }
+
 nav {
   background-color: #162b3e;
   width: 10em;
@@ -88,18 +100,35 @@ nav {
     margin: 0px;
     padding: 0px;
     width: 100%;
+
     li {
       font-size: 0.8em;
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      width: calc(100% - 15px);
-      padding-left: 15px;
       cursor: pointer;
+      width: 100%;
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       &:hover {
-        color: #162b3e;
         background: white;
+
+        a {
+          color: #162b3e;
+        }
       }
     }
   }
@@ -108,6 +137,12 @@ nav {
 main {
   max-width: calc(1920px - 10em);
   margin-left: 10em;
+
+  .animate__animated.animate__fadeInRight,
+  .animate__fadeOutLeft {
+    --animate-duration: 300ms;
+    --animate-delay: 1s;
+  }
 }
 
 @media (max-width: 430px) {
@@ -131,10 +166,11 @@ main {
       color: white;
     }
 
-    &:hover{
+    &:hover {
       background: #fe9900;
     }
   }
+
   nav {
     position: fixed;
     top: 0em;
@@ -173,9 +209,9 @@ main {
         color: white;
       }
 
-      &:hover{
-      background: #fe9900;
-    }
+      &:hover {
+        background: #fe9900;
+      }
     }
 
     img {
@@ -188,6 +224,7 @@ main {
       margin: 0px;
       padding: 0px;
       width: 100%;
+
       li {
         font-size: 1.2em;
         color: white;

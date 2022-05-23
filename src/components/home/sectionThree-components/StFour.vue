@@ -66,6 +66,16 @@ export default {
         miscellaneous(4);
         backgroundStars(4);
     },
+    unmounted() {
+        const astronaut = document.getElementById("S4astronaut");
+        const starText = document.getElementById("S4startext");
+        const stars = document.getElementById("S4bgStars");
+        const stars2 = document.getElementById("S4bgStars2");
+        astronaut.innerHTML = "";
+        starText.innerHTML = "";
+        stars.innerHTML = "";
+        stars2.innerHTML = "";
+    }
 };
 </script>
 

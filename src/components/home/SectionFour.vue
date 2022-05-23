@@ -206,6 +206,15 @@ export default {
     //   Lottie
     miscellaneous2();
   },
+  unmounted() {
+        const kinesis = document.getElementById("kinesis-animated");
+        const code = document.getElementById("code");
+        const phone = document.getElementById("phone");
+
+        kinesis.innerHTML = "";
+        code.innerHTML = "";
+        phone.innerHTML = "";
+    }
 };
 </script>
 

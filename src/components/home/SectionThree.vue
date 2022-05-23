@@ -5226,6 +5226,10 @@ export default {
       .addTo(controller);
 
 
+  },
+  unmounted() {
+    const rocket = document.getElementById("rocket");
+    rocket.innerHTML = "";
   }
 };
 </script>

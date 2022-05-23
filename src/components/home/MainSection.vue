@@ -2,17 +2,9 @@
   <div class="content-section1">
     <div class="content-svg">
       <div class="arrow-content">
-        <img
-          class="arrow"
-          src="../../assets/images-home/section1/arrow.svg"
-          alt="arrow"
-        />
+        <img class="arrow" src="../../assets/images-home/section1/arrow.svg" alt="arrow" />
       </div>
-      <img
-        class="lune"
-        src="../../assets/images-home/section1/lune-cut.svg"
-        alt="arrow"
-      />
+      <img class="lune" src="../../assets/images-home/section1/lune-cut.svg" alt="arrow" />
     </div>
 
     <div class="content-animated4">
@@ -69,7 +61,7 @@ export default {
   mounted() {
     // alert(screen.width +  " " +  screen.height);
     // alert(window.innerWidth +  " " +  window.innerHeight);
-    
+
     let animation1 = bodymovin.loadAnimation({
       animationData: {
         v: "5.9.0",
@@ -7910,8 +7902,18 @@ export default {
       autoplay: true, // Optional
       name: "aniMain4", // Name for future reference. Optional.
     });
-    
+
   },
+  unmounted() {
+    const animated1 = document.getElementById("aniMain1");
+    const animated2 = document.getElementById("aniMain2");
+    const animated3 = document.getElementById("aniMain3");
+    const animated4 = document.getElementById("aniMain4");
+    animated1.innerHTML = "";
+    animated2.innerHTML = "";
+    animated3.innerHTML = "";
+    animated4.innerHTML = "";
+  }
 };
 </script>
 

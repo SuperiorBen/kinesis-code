@@ -61,6 +61,16 @@ export default {
         miscellaneous(2);
         backgroundStars(2);
     },
+    unmounted() {
+        const astronaut = document.getElementById("S2astronaut");
+        const starText = document.getElementById("S2startext");
+        const stars = document.getElementById("S2bgStars");
+        const stars2 = document.getElementById("S2bgStars2");
+        astronaut.innerHTML = "";
+        starText.innerHTML = "";
+        stars.innerHTML = "";
+        stars2.innerHTML = "";
+    }
 };
 </script>
 
@@ -370,18 +380,18 @@ export default {
                     width: 18em;
                     margin-top: 25em;
                     margin-left: 10em;
+                }
             }
         }
-    }
 
 
-    .content-c-paragraph {
-        .content-paragraph {
-            margin-left: -6em;
+        .content-c-paragraph {
+            .content-paragraph {
+                margin-left: -6em;
+            }
+
         }
-
     }
-}
 }
 
 @media (min-width: 1600px) {
