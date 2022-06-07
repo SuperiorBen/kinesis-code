@@ -32,12 +32,12 @@ export default {
 <style lang="scss" scoped>
 .content {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
 
     .background {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background: #F2F3F3;
         overflow: hidden;
         position: relative;
@@ -45,29 +45,34 @@ export default {
 
         .arrow {
             width: 22em;
-            opacity: 0.6;
+            opacity: 0.4;
             margin-top: 2em;
             margin-left: 1em;
         }
 
         .circle {
-            width: 46em;
-            margin-top: 3vh;
-            margin-left: 2em;
+            width: 55em;
+            margin-top: -130vh;
+            margin-left: 28em;
+            opacity: 0.5;
         }
     }
 
     .contentinfo {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         overflow: hidden;
         position: relative;
         z-index: 2;
-        top: -100vh;
+        top: -50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
 
         .texts {
-            width: 100%;
+            width: 30em;
             height: 50vh;
             display: flex;
             flex-direction: column;
@@ -79,7 +84,6 @@ export default {
                 font-weight: bold;
                 color: #162B3E;
                 margin: 0px;
-                margin-top: 2em;
 
                 span {
                     color: #FE9900;
@@ -93,7 +97,8 @@ export default {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                line-height: 1.3em;
+                line-height: 1.4em;
+                font-size: 0.9em;
 
                 span {
                     margin-top: 2em;
@@ -103,7 +108,6 @@ export default {
 
         .mainTask {
             width: 27em;
-            margin-top: 6em;
         }
     }
 }
@@ -122,7 +126,7 @@ export default {
 
             .arrow {
                 width: 22em;
-                opacity: 0.8;
+                opacity: 0.4;
                 margin-left: 5em;
             }
 
